@@ -1,0 +1,49 @@
+.rcs-sharebutton {
+  align-items: center;
+  background-color: #999999;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  transition: 0.1s;
+  width: 60px;
+}
+
+.rcs-sharebutton > svg {
+  fill: #ffffff;
+  height: 70%;
+  transition: 0.5s;
+  width: 70%;
+}
+
+@media (hover: hover) {
+  .rcs-sharebutton:hover {
+    transform: scale(1.1);
+  }
+
+  .rcs-sharebutton:hover > svg {
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+    transform: scale(1.1);
+  }
+}
+
+.rcs-facebook {
+  background-color: #3b5998;
+}
+.rcs-googleplus {
+  background-color: #dd4b39;
+}
+.rcs-twitter {
+  background-color: #00aced;
+}
+.rcs-email {
+  background-color: #7f7f7f;
+}
+.rcs-pinterest {
+  background-color: #cb2128;
+}
+.rcs-linkedin {
+  background-color: #007fb1;
+}

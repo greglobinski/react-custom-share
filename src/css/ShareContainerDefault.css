@@ -1,0 +1,10 @@
+.rcs-sharecontainer-default {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rcs-sharecontainer-default > button {
+  margin: 10px;
+}

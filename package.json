@@ -1,0 +1,35 @@
+{
+  "name": "react-custom-share",
+  "version": "0.0.1",
+  "description": "Put a description here",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "Your name",
+    "email": "your email"
+  },
+  "peerDependencies": {
+    "react": "15.5.4",
+    "react-dom": "^16.4.1",
+    "styled-jsx": "^2.2.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
+    "webpack": "4.12.1",
+    "webpack-cli": "3.0.8"
+  }
+}
