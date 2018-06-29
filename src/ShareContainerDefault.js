@@ -4,7 +4,12 @@ import './css/ShareContainerDefault.css';
 import ShareContainer from './ShareContainer';
 
 const ShareContainerDefault = props => {
-  return <ShareContainer defaultStyleClass="rcs-sharecontainer-default" {...props} />;
+  return (
+    <ShareContainer
+      defaultStyleClass="rcs-sharecontainer rcs-sharecontainer--default"
+      {...props}
+    />
+  );
 };
 
 ShareContainerDefault.propTypes = {

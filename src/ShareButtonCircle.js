@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './css/ShareButtonDefault.css';
+import './css/ShareButtonCircle.css';
 import ShareButton from './ShareButton';
 
-const ShareButtonDefault = props => {
+const ShareButtonCircle = props => {
   const networkClassModifier = props.network.toLowerCase();
 
   return (
     <ShareButton
-      defaultStyleClass={`rcs-sharebutton rcs-${networkClassModifier}`}
+      defaultStyleClass={`rcs-sharebutton--circle rcs-${networkClassModifier}`}
       {...props}
     />
   );
 };
 
-ShareButtonDefault.propTypes = {
+ShareButtonCircle.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default ShareButtonDefault;
+export default ShareButtonCircle;

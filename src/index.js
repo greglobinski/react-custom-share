@@ -1,4 +1,9 @@
 export { default as ShareButton } from './ShareButton';
-export { default as ShareButtonDefault } from './ShareButtonDefault';
+export { default as ShareButtonCircle } from './ShareButtonCircle';
+export { default as ShareButtonIconOnly } from './ShareButtonIconOnly';
+export { default as ShareButtonOutline } from './ShareButtonOutline';
+export { default as ShareButtonRectangle } from './ShareButtonRectangle';
+export { default as ShareButtonRoundSquare } from './ShareButtonRoundSquare';
+
 export { default as ShareContainer } from './ShareContainer';
 export { default as ShareContainerDefault } from './ShareContainerDefault';
