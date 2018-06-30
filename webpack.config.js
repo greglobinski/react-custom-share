@@ -17,7 +17,7 @@ module.exports = {
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src'),
-        exclude: /(node_modules|build)/,
+        exclude: /(node_modules|dist)/,
         use: {
           loader: 'babel-loader',
         },
