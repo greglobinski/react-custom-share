@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './css/ShareButtonOutline.css';
-import ShareButton from './ShareButton';
+import ShareButton from '../ShareButton';
 
 const ShareButtonOutline = props => {
   const networkClassModifier = props.network.toLowerCase();

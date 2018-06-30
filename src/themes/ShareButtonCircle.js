@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './css/ShareButtonCircle.css';
-import ShareButton from './ShareButton';
+import ShareButton from '../ShareButton';
 
 const ShareButtonCircle = props => {
   const networkClassModifier = props.network.toLowerCase();
