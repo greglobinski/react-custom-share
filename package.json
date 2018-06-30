@@ -12,7 +12,7 @@
     "lint": "eslint src",
     "stylelint": "stylelint src/styles/css/*",
     "validate": "npm-run-all --parallel test lint stylelint build",
-    "commitmsg": "commitlint -E GIT_PARAMS"
+    "semantic-release": "semantic-release"
   },
   "files": [
     "dist"
@@ -79,6 +79,8 @@
     "react-dom": "^16.4.1",
     "react-icons": "^2.2.7",
     "rimraf": "^2.6.2",
+    "semantic-release": "^15.6.0",
+    "simple-commit-message": "^4.0.3",
     "style-loader": "0.21.0",
     "stylelint": "9.3.0",
     "stylelint-config-standard": "18.2.0",
@@ -98,5 +100,8 @@
       "pre-commit": "npm run validate",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "release": {
+    "analyzeCommits": "simple-commit-message"
   }
 }
