@@ -1,7 +1,6 @@
-.rcs-sharecontainer--default {
+.rcs-shareblock--standard {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px 0;
 }
