@@ -1,3 +1,7 @@
+@custom-media --mobile screen and (min-width: 330px);
+@custom-media --tablet screen and (min-width: 600px);
+@custom-media --desktop screen and (min-width: 1025px);
+
 :root {
   --facebookColor: rgba(80, 124, 190, 1);
   --twitterColor: rgba(241, 98, 97, 1);

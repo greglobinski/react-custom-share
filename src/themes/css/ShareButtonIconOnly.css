@@ -36,19 +36,19 @@
   }
 }
 
-@media screen and (min-width: 330px) {
+@media (--mobile) {
   .rcs-sharebutton--icon-only {
     margin: 3px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media (--tablet) {
   .rcs-sharebutton--icon-only {
     margin: 5px;
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media (--desktop) {
   .rcs-sharebutton--icon-only {
     margin: 7px;
   }

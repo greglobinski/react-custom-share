@@ -32,19 +32,19 @@
   }
 }
 
-@media screen and (min-width: 330px) {
+@media (--mobile) {
   .rcs-sharebutton--outline {
     margin: 5px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media (--tablet) {
   .rcs-sharebutton--outline {
     margin: 7px;
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media (--desktop) {
   .rcs-sharebutton--outline {
     margin: 10px;
   }

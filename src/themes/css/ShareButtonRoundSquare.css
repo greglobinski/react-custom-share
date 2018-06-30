@@ -35,19 +35,19 @@
   }
 }
 
-@media screen and (min-width: 330px) {
+@media (--mobile) {
   .rcs-sharebutton--round-square {
     margin: 5px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media (--tablet) {
   .rcs-sharebutton--round-square {
     margin: 7px;
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media (--desktop) {
   .rcs-sharebutton--round-square {
     margin: 10px;
   }
