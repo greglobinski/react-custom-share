@@ -54,16 +54,12 @@
 
 @media screen and (min-width: 600px) {
   .rcs-sharebutton--outline {
-    height: 50px;
-    width: 50px;
     margin: 7px;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .rcs-sharebutton--outline {
-    height: 60px;
-    width: 60px;
     margin: 10px;
   }
 }
