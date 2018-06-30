@@ -11,7 +11,7 @@
     "test:watch": "jest --watch",
     "lint": "eslint src",
     "stylelint": "stylelint src/styles/css/*",
-    "validate": "npm-run-all --parallel test lint stylelint build",
+    "validate": "cross-env NO_UPDATE_NOTIFIER=true npm-run-all --parallel test lint stylelint build",
     "semantic-release": "semantic-release"
   },
   "files": [
