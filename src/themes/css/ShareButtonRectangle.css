@@ -2,8 +2,8 @@
   align-items: center;
   background: currentColor;
   border: 0;
-  cursor: pointer;
   color: #666;
+  cursor: pointer;
   display: flex;
   flex-basis: 44px;
   flex-grow: 1;
@@ -11,36 +11,41 @@
   min-height: 44px;
   overflow: hidden;
   transform: scale(1);
-}
 
-.rcs-sharebutton--rectangle > svg {
-  fill: #ffffff;
-  height: 24px;
-  transition: 0.3s;
-  width: 24px;
+  & > svg {
+    fill: #fff;
+    height: 24px;
+    transition: 0.3s;
+    width: 24px;
+  }
+
+  &.rcs-facebook {
+    color: #507cbe;
+  }
+
+  &.rcs-googleplus {
+    color: #f16261;
+  }
+
+  &.rcs-twitter {
+    color: #63cdf1;
+  }
+
+  &.rcs-email {
+    color: #fcc95d;
+  }
+
+  &.rcs-pinterest {
+    color: #f16261;
+  }
+
+  &.rcs-linkedin {
+    color: #90cadd;
+  }
 }
 
 @media (hover: hover) {
   .rcs-sharebutton--rectangle:hover > svg {
     transform: rotate(-5deg) scale(3);
   }
-}
-
-.rcs-sharebutton--rectangle.rcs-facebook {
-  color: #507cbe;
-}
-.rcs-sharebutton--rectangle.rcs-googleplus {
-  color: #f16261;
-}
-.rcs-sharebutton--rectangle.rcs-twitter {
-  color: #63cdf1;
-}
-.rcs-sharebutton--rectangle.rcs-email {
-  color: #fcc95d;
-}
-.rcs-sharebutton--rectangle.rcs-pinterest {
-  color: #f16261;
-}
-.rcs-sharebutton--rectangle.rcs-linkedin {
-  color: #90cadd;
 }

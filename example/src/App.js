@@ -6,7 +6,7 @@ import {
   ShareButtonCircle,
   ShareButtonIconOnly,
   ShareButtonOutline,
-  ShareBlockStandard
+  ShareBlockStandard,
 } from 'react-custom-share';
 
 import FaTwitter from 'react-icons/lib/fa/twitter';
@@ -32,24 +32,18 @@ class App extends Component {
           network: 'Pinterest',
           icon: FaPinterest,
           media:
-            'https://dev.greglobinski.com/static/algolia-create-app-550f290e3572463a1916e07985c6ca9b-48538.png'
+            'https://dev.greglobinski.com/static/algolia-create-app-550f290e3572463a1916e07985c6ca9b-48538.png',
         },
-        { network: 'Linkedin', icon: FaLinkedin }
+        { network: 'Linkedin', icon: FaLinkedin },
       ],
-      text: 'TO jest tekst do zsharowania'
+      text: 'TO jest tekst do zsharowania',
     };
 
     return (
       <div className="app">
         <ShareBlockStandard {...shareBlockProps} />
-        <ShareBlockStandard
-          {...shareBlockProps}
-          button={ShareButtonRectangle}
-        />
-        <ShareBlockStandard
-          {...shareBlockProps}
-          button={ShareButtonRoundSquare}
-        />
+        <ShareBlockStandard {...shareBlockProps} button={ShareButtonRectangle} />
+        <ShareBlockStandard {...shareBlockProps} button={ShareButtonRoundSquare} />
         <ShareBlockStandard {...shareBlockProps} button={ShareButtonCircle} />
         <ShareBlockStandard {...shareBlockProps} button={ShareButtonIconOnly} />
         <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />

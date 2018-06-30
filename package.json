@@ -1,35 +1,81 @@
 {
   "name": "react-custom-share",
   "version": "0.0.1",
-  "description": "Put a description here",
-  "main": "build/index.js",
+  "description": "Social sharing buttons for React",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint src",
+    "stylelint": "stylelint src/themes/css/*",
+    "validate": "npm-run-all --parallel lint stylelint build"
   },
-  "author": {
-    "name": "Your name",
-    "email": "your email"
+  "files": [
+    "dist"
+  ],
+  "author": "greg lobinski <greglobinski@gmail.com> (https://www.greglobinski.com/)",
+  "license": "MIT",
+  "homepage": "https:/github.com/greglobinski/react-custom-share#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greglobinski/react-custom-share.git"
+  },
+  "keywords": [
+    "react",
+    "share",
+    "social networks",
+    "social sharing",
+    "Facebook",
+    "Google Plus",
+    "Twitter",
+    "E-mail",
+    "Pinterest",
+    "Linkedin"
+  ],
+  "bugs": {
+    "url": "https://github.com/greglobinski/react-custom-share/issues"
   },
   "peerDependencies": {
     "react": "15.5.4",
-    "react-dom": "^16.4.1",
-    "styled-jsx": "^2.2.7"
+    "react-dom": "16.4.1",
+    "styled-jsx": "2.2.7"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.5.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "css-loader": "^0.28.11",
-    "style-loader": "^0.21.0",
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.1.4",
+    "babel-plugin-react-require": "3.0.0",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-plugin-transform-react-jsx": "6.24.1",
+    "babel-preset-env": "1.5.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "cross-env": "5.2.0",
+    "css-loader": "0.28.11",
+    "eslint": "4.1.1",
+    "eslint-config-react-app": "2.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-babel": "5.1.0",
+    "eslint-plugin-flowtype": "2.34.1",
+    "eslint-plugin-import": "2.6.0",
+    "eslint-plugin-jest": "21.17.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0",
+    "npm-run-all": "^4.1.3",
+    "postcss": "^6.0.23",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^2.1.5",
+    "prettier": "^1.13.7",
+    "style-loader": "0.21.0",
+    "stylelint": "^9.3.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1",
     "webpack": "4.12.1",
     "webpack-cli": "3.0.8"
+  },
+  "dependencies": {
+    "prop-types": "15.6.2"
   }
 }

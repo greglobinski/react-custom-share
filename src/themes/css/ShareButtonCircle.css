@@ -1,69 +1,74 @@
 .rcs-sharebutton--circle {
   align-items: center;
+  background: currentColor;
   border: 0;
   border-radius: 50%;
-  background: currentColor;
   cursor: pointer;
   display: flex;
-  justify-content: center;
   height: 44px;
+  justify-content: center;
   margin: 3px;
   position: relative;
   transition: 0.3s;
   width: 44px;
-}
 
-.rcs-sharebutton--circle::before {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  content: '';
-  height: 100%;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-100%, -50%);
-  transition: 0.2s;
-  width: 50%;
-}
+  &.rcs-facebook {
+    color: #507cbe;
+  }
 
-.rcs-sharebutton--circle > svg {
-  fill: #ffffff;
-  height: 70%;
-  transform: scale(1);
-  transition: 0.3s;
-  width: 70%;
-  z-index: 1;
+  &.rcs-googleplus {
+    color: #f16261;
+  }
+
+  &.rcs-twitter {
+    color: #63cdf1;
+  }
+
+  &.rcs-email {
+    color: #fcc95d;
+  }
+
+  &.rcs-pinterest {
+    color: #f16261;
+  }
+
+  &.rcs-linkedin {
+    color: #90cadd;
+  }
+
+  &::before {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    content: '';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    transition: 0.2s;
+    width: 50%;
+  }
+
+  & > svg {
+    fill: #fff;
+    height: 70%;
+    transform: scale(1);
+    transition: 0.3s;
+    width: 70%;
+    z-index: 1;
+  }
 }
 
 @media (hover: hover) {
   .rcs-sharebutton--circle:hover::before {
-    transform: translate(0%, -50%) rotateY(180deg);
     background-color: rgba(0, 0, 0, 0.1);
+    transform: translate(0%, -50%) rotateY(180deg);
   }
 
   .rcs-sharebutton--circle:hover > svg {
     transform: scale(1.2);
   }
-}
-
-.rcs-sharebutton--circle.rcs-facebook {
-  color: #507cbe;
-}
-.rcs-sharebutton--circle.rcs-googleplus {
-  color: #f16261;
-}
-.rcs-sharebutton--circle.rcs-twitter {
-  color: #63cdf1;
-}
-.rcs-sharebutton--circle.rcs-email {
-  color: #fcc95d;
-}
-.rcs-sharebutton--circle.rcs-pinterest {
-  color: #f16261;
-}
-.rcs-sharebutton--circle.rcs-linkedin {
-  color: #90cadd;
 }
 
 @media screen and (min-width: 330px) {

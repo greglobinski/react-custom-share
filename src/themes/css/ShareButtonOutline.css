@@ -1,49 +1,55 @@
 .rcs-sharebutton--outline {
   align-items: center;
-  border-radius: 50%;
   background: none;
   border: 0;
+  border-radius: 50%;
   cursor: pointer;
   display: flex;
-  justify-content: center;
   height: 44px;
+  justify-content: center;
   margin: 3px;
   transition: 0.3s;
   width: 44px;
-}
 
-.rcs-sharebutton--outline > svg {
-  fill: white;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
-  height: 80%;
-  transition: 0.3s;
-  width: 80%;
+  &.rcs-facebook {
+    color: rgba(80, 124, 190, 1);
+  }
+
+  &.rcs-googleplus {
+    color: rgba(241, 98, 97, 1);
+  }
+
+  &.rcs-twitter {
+    color: rgba(99, 205, 241, 1);
+  }
+
+  &.rcs-email {
+    color: rgba(252, 201, 93, 1);
+  }
+
+  &.rcs-pinterest {
+    color: rgba(241, 98, 97, 1);
+  }
+
+  &.rcs-linkedin {
+    color: rgba(144, 202, 221, 1);
+  }
+
+  & > svg {
+    fill: white;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+    height: 80%;
+    transition: 0.3s;
+    width: 80%;
+  }
 }
 
 @media (hover: hover) {
   .rcs-sharebutton--outline:hover > svg {
     fill: currentColor;
-    filter: drop-shadow(0 0 1px currentColor);
-  }
-}
 
-.rcs-sharebutton--outline.rcs-facebook {
-  color: rgba(80, 124, 190, 1);
-}
-.rcs-sharebutton--outline.rcs-googleplus {
-  color: rgba(241, 98, 97, 1);
-}
-.rcs-sharebutton--outline.rcs-twitter {
-  color: rgba(99, 205, 241, 1);
-}
-.rcs-sharebutton--outline.rcs-email {
-  color: rgba(252, 201, 93, 1);
-}
-.rcs-sharebutton--outline.rcs-pinterest {
-  color: rgba(241, 98, 97, 1);
-}
-.rcs-sharebutton--outline.rcs-linkedin {
-  color: rgba(144, 202, 221, 1);
+    /* filter: drop-shadow(0 0 1px currentColor); */
+  }
 }
 
 @media screen and (min-width: 330px) {
