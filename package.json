@@ -11,7 +11,8 @@
     "test:watch": "jest --watch",
     "lint": "eslint src",
     "stylelint": "stylelint src/styles/css/*",
-    "validate": "npm-run-all --parallel test lint stylelint build"
+    "validate": "npm-run-all --parallel test lint stylelint build",
+    "commitmsg": "commitlint -E GIT_PARAMS"
   },
   "files": [
     "dist"
