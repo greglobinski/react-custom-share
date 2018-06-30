@@ -1,3 +1,5 @@
+@import 'variables.css';
+
 .rcs-sharebutton--circle {
   align-items: center;
   background: currentColor;
@@ -12,34 +14,11 @@
   transition: 0.3s;
   width: 44px;
 
-  &.rcs-facebook {
-    color: #507cbe;
-  }
-
-  &.rcs-googleplus {
-    color: #f16261;
-  }
-
-  &.rcs-twitter {
-    color: #63cdf1;
-  }
-
-  &.rcs-email {
-    color: #fcc95d;
-  }
-
-  &.rcs-pinterest {
-    color: #f16261;
-  }
-
-  &.rcs-linkedin {
-    color: #90cadd;
-  }
-
   &::before {
     background-color: rgba(255, 255, 255, 0.2);
     border-bottom-left-radius: 100px;
     border-top-left-radius: 100px;
+    color: inherit;
     content: '';
     height: 100%;
     left: 50%;
@@ -58,6 +37,8 @@
     width: 70%;
     z-index: 1;
   }
+
+  @apply --network-colors;
 }
 
 @media (hover: hover) {

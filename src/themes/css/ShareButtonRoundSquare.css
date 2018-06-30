@@ -1,3 +1,5 @@
+@import 'variables.css';
+
 .rcs-sharebutton--round-square {
   align-items: center;
   background: currentColor;
@@ -19,29 +21,7 @@
     width: 50%;
   }
 
-  &.rcs-facebook {
-    color: #507cbe;
-  }
-
-  &.rcs-googleplus {
-    color: #f16261;
-  }
-
-  &.rcs-twitter {
-    color: #63cdf1;
-  }
-
-  &.rcs-email {
-    color: #fcc95d;
-  }
-
-  &.rcs-pinterest {
-    color: #f16261;
-  }
-
-  &.rcs-linkedin {
-    color: #90cadd;
-  }
+  @apply --network-colors;
 }
 
 @media (hover: hover) {

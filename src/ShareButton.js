@@ -41,7 +41,7 @@ ShareButton.propTypes = {
   url: PropTypes.string.isRequired,
   text: PropTypes.string,
   children: PropTypes.node,
-  defaultStyleClass: PropTypes.string
+  defaultStyleClass: PropTypes.string,
 };
 
 export default ShareButton;

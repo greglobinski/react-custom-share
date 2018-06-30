@@ -1,0 +1,34 @@
+:root {
+  --facebookColor: rgba(80, 124, 190, 1);
+  --twitterColor: rgba(241, 98, 97, 1);
+  --googleplusColor: rgba(99, 205, 241, 1);
+  --emailColor: rgba(252, 201, 93, 1);
+  --pinterestColor: rgba(241, 98, 97, 1);
+  --linkedinColor: rgba(144, 202, 221, 1);
+
+  --network-colors: {
+    &.rcs-facebook {
+      color: var(--facebookColor);
+    }
+
+    &.rcs-googleplus {
+      color: var(--twitterColor);
+    }
+
+    &.rcs-twitter {
+      color: var(--googleplusColor);
+    }
+
+    &.rcs-email {
+      color: var(--emailColor);
+    }
+
+    &.rcs-pinterest {
+      color: var(--pinterestColor);
+    }
+
+    &.rcs-linkedin {
+      color: var(--linkedinColor);
+    }
+  }
+}
