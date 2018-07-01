@@ -21,17 +21,20 @@
     width: 50%;
   }
 
+  &:hover {
+    & > svg {
+      filter: drop-shadow(0 0 3px rgba(255, 255, 255, 1));
+      transform: rotate(360deg) scale(1.2);
+    }
+  }
+
   @apply --network-colors;
 }
 
-@media (hover: hover) {
-  .rcs-sharebutton--round-square:hover {
-    box-shadow: none;
-  }
-
+@media (any-hover: none) {
   .rcs-sharebutton--round-square:hover > svg {
-    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 1));
-    transform: rotate(360deg) scale(1.2);
+    filter: none;
+    transform: rotate(0) scale(1);
   }
 }
 

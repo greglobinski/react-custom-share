@@ -17,15 +17,22 @@
   & > svg {
     fill: #fff;
     height: 24px;
+    transform: scale(1);
     transition: 0.3s;
     width: 24px;
+  }
+
+  &:hover {
+    & > svg {
+      transform: rotate(-5deg) scale(3);
+    }
   }
 
   @apply --network-colors;
 }
 
-@media (hover: hover) {
+@media (any-hover: none) {
   .rcs-sharebutton--rectangle:hover > svg {
-    transform: rotate(-5deg) scale(3);
+    transform: rotate(0) scale(1);
   }
 }

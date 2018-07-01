@@ -16,23 +16,31 @@
   & > svg {
     fill: currentColor;
     height: 65%;
-    transform: scale(1);
-    transition: 0.3s;
+    transition: transform 0.3s;
     width: 65%;
+  }
+
+  &:hover {
+    background: currentColor;
+    box-shadow: 0 0 10px currentColor;
+
+    & > svg {
+      fill: #fff;
+    }
   }
 
   @apply --network-colors;
 }
 
-@media (hover: hover) {
+@media (any-hover: none) {
   .rcs-sharebutton--icon-only:hover {
-    background: currentColor;
-    box-shadow: 0 0 10px currentColor;
+    background: none;
+    box-shadow: none;
   }
 
   .rcs-sharebutton--icon-only:hover > svg {
-    fill: #fff;
-    transform: scale(1.2);
+    fill: currentColor;
+    transform: scale(1);
   }
 }
 

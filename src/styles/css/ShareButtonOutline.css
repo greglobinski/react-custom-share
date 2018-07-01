@@ -21,12 +21,18 @@
     width: 80%;
   }
 
+  &:hover {
+    & > svg {
+      fill: currentColor;
+    }
+  }
+
   @apply --network-colors;
 }
 
-@media (hover: hover) {
+@media (any-hover: none) {
   .rcs-sharebutton--outline:hover > svg {
-    fill: currentColor;
+    fill: white;
 
     /* filter: drop-shadow(0 0 1px currentColor); */
   }

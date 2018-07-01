@@ -38,17 +38,28 @@
     z-index: 1;
   }
 
+  &:hover {
+    &::before {
+      background-color: rgba(0, 0, 0, 0.1);
+      transform: translate(0%, -50%) rotateY(180deg);
+    }
+
+    & > svg {
+      transform: scale(1.2);
+    }
+  }
+
   @apply --network-colors;
 }
 
-@media (hover: hover) {
+@media (any-hover: none) {
   .rcs-sharebutton--circle:hover::before {
-    background-color: rgba(0, 0, 0, 0.1);
-    transform: translate(0%, -50%) rotateY(180deg);
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-100%, -50%);
   }
 
   .rcs-sharebutton--circle:hover > svg {
-    transform: scale(1.2);
+    transform: scale(1);
   }
 }
 
