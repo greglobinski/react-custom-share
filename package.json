@@ -43,7 +43,8 @@
   },
   "peerDependencies": {
     "react": ">=16.0.1",
-    "react-dom": ">=16.0.1"
+    "react-dom": ">=16.0.1",
+    "prop-types": ">=15.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
@@ -77,6 +78,7 @@
     "postcss-loader": "2.1.5",
     "postcss-partial-import": "4.1.0",
     "prettier": "1.13.7",
+    "prop-types": ">=15.0.1",
     "react": ">=16.0.1",
     "react-dom": ">=16.0.1",
     "react-icons": "^2.2.7",
@@ -91,9 +93,7 @@
     "webpack-cli": "3.0.8",
     "travis-deploy-once": "^5.0.1"
   },
-  "dependencies": {
-    "prop-types": "15.6.2"
-  },
+  "dependencies": {},
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
