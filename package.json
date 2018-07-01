@@ -1,11 +1,9 @@
 {
   "name": "react-custom-share",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "description": "Social sharing buttons for React",
   "main": "dist/index.js",
-  "publishConfig": {
-    "access": "restricted"
-  },
+  "publishConfig": {},
   "scripts": {
     "start": "webpack --watch",
     "prebuild": "rimraf dist",
