@@ -40,8 +40,8 @@
     "url": "https://github.com/greglobinski/react-custom-share/issues"
   },
   "peerDependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": ">=16.0.1",
+    "react-dom": ">=16.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
@@ -75,8 +75,8 @@
     "postcss-loader": "2.1.5",
     "postcss-partial-import": "4.1.0",
     "prettier": "1.13.7",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": ">=16.0.1",
+    "react-dom": ">=16.0.1",
     "react-icons": "^2.2.7",
     "rimraf": "^2.6.2",
     "semantic-release": "^15.6.0",
