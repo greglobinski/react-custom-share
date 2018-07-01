@@ -1,8 +1,11 @@
 {
   "name": "react-custom-share",
-  "version": "0.0.1",
+  "version": "0.0.0-semantically-released",
   "description": "Social sharing buttons for React",
   "main": "dist/index.js",
+  "publishConfig": {
+    "access": "restricted"
+  },
   "scripts": {
     "start": "webpack --watch",
     "prebuild": "rimraf dist",
@@ -12,7 +15,8 @@
     "lint": "eslint src",
     "stylelint": "stylelint src/styles/css/*",
     "validate": "cross-env NO_UPDATE_NOTIFIER=true npm-run-all --parallel test lint stylelint build",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "files": [
     "dist"
@@ -86,7 +90,8 @@
     "stylelint-config-standard": "18.2.0",
     "stylelint-order": "0.8.1",
     "webpack": "4.12.1",
-    "webpack-cli": "3.0.8"
+    "webpack-cli": "3.0.8",
+    "travis-deploy-once": "^5.0.1"
   },
   "dependencies": {
     "prop-types": "15.6.2"
