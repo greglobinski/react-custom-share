@@ -1,0 +1,9 @@
+.app {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.rcs-shareblock--standard {
+  border-bottom: 1px dotted #ddd;
+  padding: 50px 0;
+}
