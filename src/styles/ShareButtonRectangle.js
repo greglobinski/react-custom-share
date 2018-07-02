@@ -7,15 +7,15 @@ const ShareButtonRectangle = props => {
   const networkClassModifier = props.network.toLowerCase();
 
   return (
-    <ShareButton
-      defaultStyleClass={`rcs-sharebutton--rectangle rcs-${networkClassModifier}`}
-      {...props}
-    />
+    <ShareButton styleClass={`rcs-sharebutton--rectangle rcs-${networkClassModifier}`} {...props} />
   );
 };
 
 ShareButtonRectangle.propTypes = {
-  children: PropTypes.node.isRequired
+  network: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  text: PropTypes.string,
 };
 
 export default ShareButtonRectangle;

@@ -8,14 +8,17 @@ const ShareButtonRoundSquare = props => {
 
   return (
     <ShareButton
-      defaultStyleClass={`rcs-sharebutton--round-square rcs-${networkClassModifier}`}
+      styleClass={`rcs-sharebutton--round-square rcs-${networkClassModifier}`}
       {...props}
     />
   );
 };
 
 ShareButtonRoundSquare.propTypes = {
-  children: PropTypes.node.isRequired
+  network: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  text: PropTypes.string,
 };
 
 export default ShareButtonRoundSquare;

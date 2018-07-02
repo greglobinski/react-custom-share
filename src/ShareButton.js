@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import windowOpen from './utils/windowOpen';
 import getNetworkLink from './utils/getNetworkLink';
-
 class ShareButton extends React.PureComponent {
   onClick = e => {
     e.preventDefault();
@@ -22,11 +21,11 @@ class ShareButton extends React.PureComponent {
   };
 
   render() {
-    const { network, children, defaultStyleClass } = this.props;
+    const { network, children, styleClass } = this.props;
 
     return (
       <button
-        className={defaultStyleClass}
+        className={`rcs-sharebutton ${styleClass}`}
         aria-label={`share on ${network}`}
         onClick={this.onClick}
       >
@@ -41,7 +40,7 @@ ShareButton.propTypes = {
   url: PropTypes.string.isRequired,
   text: PropTypes.string,
   children: PropTypes.node,
-  defaultStyleClass: PropTypes.string,
+  styleClass: PropTypes.string,
 };
 
 export default ShareButton;

@@ -10,13 +10,7 @@ const ShareBlock = props => {
         const { network, icon: Icon, ...rest } = button;
 
         return (
-          <Button
-            key={network}
-            network={network}
-            url={url}
-            text={text}
-            {...rest}
-          >
+          <Button key={network} network={network} url={url} text={text} {...rest}>
             <Icon />
           </Button>
         );
@@ -30,7 +24,7 @@ ShareBlock.propTypes = {
   button: PropTypes.func.isRequired,
   buttons: PropTypes.array.isRequired,
   text: PropTypes.string,
-  themeClass: PropTypes.string
+  themeClass: PropTypes.string,
 };
 
 export default ShareBlock;

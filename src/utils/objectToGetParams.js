@@ -1,10 +1,11 @@
 function objectToGetParams(object) {
-  const params = Object.keys(object)
-    .filter(key => !!object[key])
-    .map(key => `${key}=${encodeURIComponent(object[key])}`)
-    .join('&');
+  const params = Object.keys(object).filter(key => !!object[key]);
 
-  return `?${params}`;
+  if (!params.length) {
+    return '';
+  }
+
+  return '?' + params.map(key => `${key}=${encodeURIComponent(object[key])}`).join('&');
 }
 
 export default objectToGetParams;

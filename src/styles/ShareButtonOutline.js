@@ -7,15 +7,15 @@ const ShareButtonOutline = props => {
   const networkClassModifier = props.network.toLowerCase();
 
   return (
-    <ShareButton
-      defaultStyleClass={`rcs-sharebutton--outline rcs-${networkClassModifier}`}
-      {...props}
-    />
+    <ShareButton styleClass={`rcs-sharebutton--outline rcs-${networkClassModifier}`} {...props} />
   );
 };
 
 ShareButtonOutline.propTypes = {
-  children: PropTypes.node.isRequired
+  network: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  text: PropTypes.string,
 };
 
 export default ShareButtonOutline;
