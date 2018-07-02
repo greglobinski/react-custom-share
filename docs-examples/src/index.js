@@ -18,6 +18,8 @@ import FaEnvelope from 'react-icons/lib/fa/envelope';
 import FaPinterest from 'react-icons/lib/fa/pinterest';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
 
+import './index.css';
+
 const App = props => {
   const shareBlockProps = {
     url: 'https://dev.greglobinski.com/what-is-yaml/',
