@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import globals from 'globals';
+// import globals from 'globals';
 
 import ShareButton from '../ShareButton';
 import FaTwitter from 'react-icons/lib/fa/twitter';

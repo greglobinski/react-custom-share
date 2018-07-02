@@ -9,11 +9,12 @@
     "develop": "webpack-dev-server --mode development",
     "prebuild": "rimraf dist",
     "build": "webpack",
+    "transpile": "babel src -d dist --ignore /__tests__/ --copy-files",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "lint": "eslint src",
     "stylelint": "stylelint src/styles/css/*",
-    "validate": "cross-env NO_UPDATE_NOTIFIER=true npm-run-all --parallel test lint stylelint build",
+    "validate": "npm-run-all --parallel test lint stylelint transpile",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
