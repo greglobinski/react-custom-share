@@ -1,21 +1,18 @@
-import { css } from 'emotion';
+import glamorous from 'glamorous';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 import ShareBlock from '../ShareBlock';
 
+const StyledShareBlock = glamorous(ShareBlock)({
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
+});
+
 const ShareBlockStandard = props => {
-  return (
-    <ShareBlock
-      className={css`
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      `}
-      {...props}
-    />
-  );
+  return <StyledShareBlock {...props} />;
 };
 
 ShareBlockStandard.propTypes = {
