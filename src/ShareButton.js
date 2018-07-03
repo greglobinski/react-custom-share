@@ -22,14 +22,10 @@ class ShareButton extends React.PureComponent {
   };
 
   render() {
-    const { network, children, styleClass } = this.props;
+    const { network, children, styleClass, className } = this.props;
 
     return (
-      <button
-        className={`rcs-sharebutton ${styleClass}`}
-        aria-label={`share on ${network}`}
-        onClick={this.onClick}
-      >
+      <button className={`${className}`} aria-label={`share on ${network}`} onClick={this.onClick}>
         {children}
       </button>
     );
@@ -41,7 +37,7 @@ ShareButton.propTypes = {
   url: PropTypes.string.isRequired,
   text: PropTypes.string,
   children: PropTypes.node,
-  styleClass: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default ShareButton;

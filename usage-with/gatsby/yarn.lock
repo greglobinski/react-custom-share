@@ -6192,9 +6192,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-custom-share@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/react-custom-share/-/react-custom-share-0.0.4.tgz#592c6a9b030cc312f76259a02bc80d7a80dba4fe"
+react-custom-share@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/react-custom-share/-/react-custom-share-0.0.5.tgz#6db5449e32fc37e482ac18725d1e0fb0328402f8"
 
 react-deep-force-update@^2.1.1:
   version "2.1.1"
