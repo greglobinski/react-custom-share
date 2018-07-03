@@ -5,8 +5,8 @@ import React from 'react';
 import colors from './colors';
 import ShareButton from '../ShareButton';
 
-const StyledShareButton = glamorous(ShareButton)(
-  {
+const StyledShareButton = glamorous(ShareButton)(props => {
+  return {
     alignItems: 'center',
     background: 'none',
     border: 0,
@@ -20,12 +20,16 @@ const StyledShareButton = glamorous(ShareButton)(
     width: '44px',
 
     '> svg': {
+      fill: colors[props.network],
       height: '65%',
       transition: 'transform 0.3s',
       width: '65%',
     },
 
     ':hover': {
+      background: colors[props.network],
+      boxShadow: `0 0 10px ${colors[props.network]}`,
+
       '> svg': {
         fill: '#fff',
       },
@@ -35,6 +39,10 @@ const StyledShareButton = glamorous(ShareButton)(
       ':hover': {
         background: 'none',
         boxShadow: 'none',
+
+        '> svg': {
+          fill: colors[props.network],
+        },
       },
     },
 
@@ -49,24 +57,8 @@ const StyledShareButton = glamorous(ShareButton)(
     '@media screen and (min-width: 1025px)': {
       margin: '10px',
     },
-  },
-  props => ({
-    '> svg': {
-      fill: colors[props.network],
-    },
-
-    ':hover': {
-      background: colors[props.network],
-      boxShadow: `0 0 10px ${colors[props.network]}`,
-    },
-
-    '@media (any-hover: none)': {
-      ':hover > svg': {
-        fill: colors[props.network],
-      },
-    },
-  })
-);
+  };
+});
 
 const ShareButtonCircle = props => {
   return <StyledShareButton {...props} />;

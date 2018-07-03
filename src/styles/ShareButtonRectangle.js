@@ -5,9 +5,10 @@ import React from 'react';
 import colors from './colors';
 import ShareButton from '../ShareButton';
 
-const StyledShareButton = glamorous(ShareButton)(
-  {
+const StyledShareButton = glamorous(ShareButton)(props => {
+  return {
     alignItems: 'center',
+    background: colors[props.network],
     border: 0,
     color: '#666',
     cursor: 'pointer',
@@ -38,9 +39,8 @@ const StyledShareButton = glamorous(ShareButton)(
         transform: 'rotate(0) scale(1)',
       },
     },
-  },
-  props => ({ background: colors[props.network] })
-);
+  };
+});
 
 const ShareButtonCircle = props => {
   return <StyledShareButton {...props} />;
