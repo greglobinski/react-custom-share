@@ -1,21 +1,56 @@
-import React from 'react';
+import glamorous from 'glamorous';
 import PropTypes from 'prop-types';
-import './css/ShareButtonRectangle.css';
+import React from 'react';
+
+import colors from './colors';
 import ShareButton from '../ShareButton';
 
-const ShareButtonRectangle = props => {
-  const networkClassModifier = props.network.toLowerCase();
+const StyledShareButton = glamorous(ShareButton)(
+  {
+    alignItems: 'center',
+    border: 0,
+    color: '#666',
+    cursor: 'pointer',
+    display: 'flex',
+    flexBasis: '44px',
+    flexGrow: 1,
+    justifyContent: 'center',
+    minHeight: '44px',
+    overflow: 'hidden',
+    transform: 'rotate(0) scale(1)',
 
-  return (
-    <ShareButton styleClass={`rcs-sharebutton--rectangle rcs-${networkClassModifier}`} {...props} />
-  );
+    '> svg': {
+      fill: '#fff',
+      height: '24px',
+      transform: 'scale(1)',
+      transition: '0.3s',
+      width: '24px',
+    },
+
+    ':hover': {
+      '> svg': {
+        transform: 'rotate(-5deg) scale(3)',
+      },
+    },
+
+    '@media (any-hover: none)': {
+      ':hover > svg': {
+        transform: 'rotate(0) scale(1)',
+      },
+    },
+  },
+  props => ({ background: colors[props.network] })
+);
+
+const ShareButtonCircle = props => {
+  return <StyledShareButton {...props} />;
 };
 
-ShareButtonRectangle.propTypes = {
+ShareButtonCircle.propTypes = {
   network: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   text: PropTypes.string,
 };
 
-export default ShareButtonRectangle;
+export default ShareButtonCircle;

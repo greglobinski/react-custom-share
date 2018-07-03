@@ -1,17 +1,25 @@
-import React from 'react';
+import glamorous from 'glamorous';
 import PropTypes from 'prop-types';
-import './css/ShareBlockStandard.css';
+import React from 'react';
+
 import ShareBlock from '../ShareBlock';
 
+const StyledShareBlock = glamorous(ShareBlock)({
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
+});
+
 const ShareBlockStandard = props => {
-  return <ShareBlock themeClass="rcs-shareblock--standard" {...props} />;
+  return <StyledShareBlock {...props} />;
 };
 
 ShareBlockStandard.propTypes = {
   url: PropTypes.string.isRequired,
   button: PropTypes.func.isRequired,
   buttons: PropTypes.array.isRequired,
-  text: PropTypes.string
+  text: PropTypes.string,
 };
 
 export default ShareBlockStandard;

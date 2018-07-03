@@ -22,7 +22,7 @@ class ShareButton extends React.PureComponent {
   };
 
   render() {
-    const { network, children, styleClass, className } = this.props;
+    const { network, children, className } = this.props;
 
     return (
       <button className={`${className}`} aria-label={`share on ${network}`} onClick={this.onClick}>

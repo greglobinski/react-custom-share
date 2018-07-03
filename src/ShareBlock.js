@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ShareBlock = props => {
-  const { url, button: Button, buttons, text = '', themeClass = '' } = props;
+  const { url, button: Button, buttons, text = '', className = '' } = props;
 
   return (
-    <div className={`rcs-shareblock ${themeClass}`}>
+    <div className={`${className}`}>
       {buttons.map(button => {
         const { network, icon: Icon, ...rest } = button;
 
@@ -24,7 +24,7 @@ ShareBlock.propTypes = {
   button: PropTypes.func.isRequired,
   buttons: PropTypes.array.isRequired,
   text: PropTypes.string,
-  themeClass: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default ShareBlock;

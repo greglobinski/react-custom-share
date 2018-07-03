@@ -1,21 +1,9 @@
+import glamorous from 'glamorous';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import colors from './colors';
 import ShareButton from '../ShareButton';
-
-// import buttonStyles from './css/ShareButtonCircle.module.css';
-// import networkStyles from './css/Networks.module.css';
-
-import glamorous from 'glamorous';
-
-const colors = {
-  Facebook: 'rgba(80, 124, 190, 1)',
-  Twitter: 'rgba(99, 205, 241, 1)',
-  GooglePlus: 'rgba(241, 98, 97, 1)',
-  Email: 'rgba(252, 201, 93, 1)',
-  Pinterest: 'rgba(241, 98, 97, 1)',
-  Linkedin: 'rgba(144, 202, 221, 1)',
-};
 
 const StyledShareButton = glamorous(ShareButton)(
   {
