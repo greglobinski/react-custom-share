@@ -3,13 +3,17 @@ import React from 'react';
 
 import ShareButton from '../ShareButton';
 
-import './css/ShareButtonCircle.css';
+import buttonStyles from './css/ShareButtonCircle.module.css';
+import networkStyles from './css/Networks.module.css';
 
 const ShareButtonCircle = props => {
-  const networkClassModifier = props.network.toLowerCase();
+  const networkClass = props.network.toLowerCase();
 
   return (
-    <ShareButton styleClass={`rcs-sharebutton--circle rcs-${networkClassModifier}`} {...props} />
+    <ShareButton
+      styleClass={`${buttonStyles.sharebutton} ${networkStyles[networkClass]}`}
+      {...props}
+    />
   );
 };
 

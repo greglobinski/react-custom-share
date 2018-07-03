@@ -1,6 +1,6 @@
 @import 'variables.css';
 
-.rcs-sharebutton--circle {
+.sharebutton {
   align-items: center;
   background: currentColor;
   border: 0;
@@ -48,35 +48,33 @@
       transform: scale(1.2);
     }
   }
-
-  @apply --network-colors;
 }
 
 @media (any-hover: none) {
-  .rcs-sharebutton--circle:hover::before {
+  .sharebutton:hover::before {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translate(-100%, -50%);
   }
 
-  .rcs-sharebutton--circle:hover > svg {
+  .sharebutton:hover > svg {
     transform: scale(1);
   }
 }
 
 @media (--mobile) {
-  .rcs-sharebutton--circle {
+  .sharebutton {
     margin: 5px;
   }
 }
 
 @media (--tablet) {
-  .rcs-sharebutton--circle {
+  .sharebutton {
     margin: 7px;
   }
 }
 
 @media (--desktop) {
-  .rcs-sharebutton--circle {
+  .sharebutton {
     margin: 10px;
   }
 }

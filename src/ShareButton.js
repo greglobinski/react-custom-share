@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import windowOpen from './utils/windowOpen';
 import getNetworkLink from './utils/getNetworkLink';
+
 class ShareButton extends React.PureComponent {
   onClick = e => {
     e.preventDefault();
