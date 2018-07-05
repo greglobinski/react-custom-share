@@ -1,11 +1,18 @@
 import objectToGetParams from './objectToGetParams';
 
 const generators = {
+  email: params => {
+    const { url, text = '', longtext = '' } = params;
+    return `mailto:${objectToGetParams({
+      subject: text,
+      body: `${longtext} \n\n» ${url}`,
+    })}`;
+  },
   facebook: params => {
-    const { url, text = '', hashtag = '' } = params;
+    const { url, text = '', longtext = '', hashtag = '' } = params;
     return `https://www.facebook.com/sharer/sharer.php${objectToGetParams({
       u: url,
-      quote: text,
+      quote: text || longtext ? `${text} \n${longtext}` : '',
       hashtag,
     })}`;
   },
@@ -25,11 +32,11 @@ const generators = {
     })}`;
   },
   linkedin: params => {
-    const { url, text = '', longerText = '' } = params;
+    const { url, text = '', longtext = '' } = params;
     return `https://linkedin.com/shareArticle${objectToGetParams({
       url,
       title: text,
-      summary: longerText,
+      summary: longtext,
     })}`;
   },
   pinterest: params => {

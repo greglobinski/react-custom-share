@@ -2,21 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ShareBlock = props => {
-  const { url, button: Button, buttons, text, className } = props;
+  const { url, button: Button, buttons, className, ...blockRest } = props;
 
   return (
     <div className={`${className}`}>
       {buttons.map(button => {
-        const { network, icon: Icon, ...rest } = button;
+        const { network, icon: Icon, ...buttonRest } = button;
+        const rest = { ...blockRest, ...buttonRest };
 
         return (
-          <Button
-            key={network}
-            network={network}
-            url={url}
-            text={text}
-            {...rest}
-          >
+          <Button key={network} network={network} url={url} {...rest}>
             <Icon />
           </Button>
         );

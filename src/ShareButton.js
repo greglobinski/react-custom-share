@@ -7,10 +7,8 @@ class ShareButton extends React.PureComponent {
   onClick = e => {
     e.preventDefault();
 
-    const url = this.props.url;
-    const network = this.props.network;
-    const text = this.props.text;
-    const networkLink = getNetworkLink({ network, url, text });
+    const { url, network, text = '', longtext = '' } = this.props;
+    const networkLink = getNetworkLink({ network, url, text, longtext });
 
     this.openShareWindow(networkLink);
   };

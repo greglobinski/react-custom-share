@@ -91,7 +91,6 @@ ShareButtonCircle.propTypes = {
   network: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  text: PropTypes.string,
 };
 
 export default ShareButtonCircle;

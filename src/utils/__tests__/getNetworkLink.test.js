@@ -10,8 +10,8 @@ describe('function getNetworkLink()', () => {
         network: 'Facebook',
         url: urlToShare,
       })
-    ).toBe(
-      'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwebsite-to-share.com'
+    ).toMatch(
+      /^https:\/\/www.facebook.com\/sharer\/sharer.php\?u=https%3A%2F%2Fwebsite-to-share.com/
     );
   });
 
@@ -21,7 +21,9 @@ describe('function getNetworkLink()', () => {
         network: 'Twitter',
         url: urlToShare,
       })
-    ).toBe('https://twitter.com/share?url=https%3A%2F%2Fwebsite-to-share.com');
+    ).toMatch(
+      /^https:\/\/twitter.com\/share\?url=https%3A%2F%2Fwebsite-to-share.com/
+    );
   });
 
   test('returns a proper link for Linkedin', () => {
@@ -30,8 +32,8 @@ describe('function getNetworkLink()', () => {
         network: 'Linkedin',
         url: urlToShare,
       })
-    ).toBe(
-      'https://linkedin.com/shareArticle?url=https%3A%2F%2Fwebsite-to-share.com'
+    ).toMatch(
+      /^https:\/\/linkedin.com\/shareArticle\?url=https%3A%2F%2Fwebsite-to-share.com/
     );
   });
 
@@ -41,8 +43,8 @@ describe('function getNetworkLink()', () => {
         network: 'GooglePlus',
         url: urlToShare,
       })
-    ).toBe(
-      'https://plus.google.com/share?url=https%3A%2F%2Fwebsite-to-share.com'
+    ).toMatch(
+      /^https:\/\/plus.google.com\/share\?url=https%3A%2F%2Fwebsite-to-share.com/
     );
   });
 
@@ -53,8 +55,8 @@ describe('function getNetworkLink()', () => {
         url: urlToShare,
         media: pictureToShare,
       })
-    ).toBe(
-      'https://pinterest.com/pin/create/button/?media=https%3A%2F%2Fwebsite-to-share.com%2Fpicture-to-share.jpg'
+    ).toMatch(
+      /^https:\/\/pinterest.com\/pin\/create\/button\/\?media=https%3A%2F%2Fwebsite-to-share.com%2Fpicture-to-share.jpg/
     );
   });
 

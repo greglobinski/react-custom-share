@@ -22,7 +22,7 @@ import './index.css';
 
 const App = props => {
   const shareBlockProps = {
-    url: 'https://dev.greglobinski.com/what-is-yaml/',
+    url: 'https://github.com/greglobinski/react-custom-share',
     button: ShareButton,
     buttons: [
       { network: 'Twitter', icon: FaTwitter },
@@ -37,14 +37,18 @@ const App = props => {
       },
       { network: 'Linkedin', icon: FaLinkedin },
     ],
-    text: 'TO jest tekst do zsharowania',
+    text: `Give it a try - react-custom-share component`,
+    longtext: `Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch.`,
   };
 
   return (
     <div className="app">
       <ShareBlockStandard {...shareBlockProps} />
       <ShareBlockStandard {...shareBlockProps} button={ShareButtonRectangle} />
-      <ShareBlockStandard {...shareBlockProps} button={ShareButtonRoundSquare} />
+      <ShareBlockStandard
+        {...shareBlockProps}
+        button={ShareButtonRoundSquare}
+      />
       <ShareBlockStandard {...shareBlockProps} button={ShareButtonCircle} />
       <ShareBlockStandard {...shareBlockProps} button={ShareButtonIconOnly} />
       <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />
