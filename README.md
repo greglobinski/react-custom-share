@@ -70,8 +70,8 @@ import FaLinkedin from 'react-icons/lib/fa/linkedin';
 
 // import react-custom-share components
 import {
-  ShareButton,
   ShareButtonRectangle,
+  ShareBlockStandard,
 } from 'react-custom-share';
 
 const ShareComponent = props => {

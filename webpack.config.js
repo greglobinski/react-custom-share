@@ -13,11 +13,6 @@ module.exports = {
         },
         exclude: /node_modules/,
       },
-      {
-        test: /\.css$/,
-        exclude: /\.module\.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
-      },
     ],
   },
   resolve: {
