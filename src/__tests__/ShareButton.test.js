@@ -3,7 +3,6 @@ import { render, cleanup, fireEvent } from 'react-testing-library';
 
 import ShareButton from '../ShareButton';
 import FaTwitter from 'react-icons/lib/fa/twitter';
-import { constants } from 'os';
 
 afterEach(cleanup);
 

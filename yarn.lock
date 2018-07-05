@@ -2965,6 +2965,12 @@ cyclist@~0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
 
+cypress-testing-library@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/cypress-testing-library/-/cypress-testing-library-2.2.0.tgz#9a33df426b8f9815da5e771e1ba5602919c71e99"
+  dependencies:
+    dom-testing-library "^2.0.0"
+
 cypress@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/cypress/-/cypress-3.0.2.tgz#90caef84c91bd52b9cdf123aa76213249a289694"
@@ -3287,7 +3293,7 @@ dom-serializer@0:
     domelementtype "~1.1.1"
     entities "~1.1.1"
 
-dom-testing-library@^2.6.0:
+dom-testing-library@^2.0.0, dom-testing-library@^2.6.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/dom-testing-library/-/dom-testing-library-2.7.0.tgz#befea03aa429ee48751eca8c4490f0c07f95af0e"
   dependencies:
