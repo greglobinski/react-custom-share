@@ -2,6 +2,8 @@
 
 Social media share buttons for ReactJS. Use one of the built-in button themes or create a custom one from scratch.
 
+![react-custom-share](./static/react-custom-share.gif)
+
 ## Features
 
 - opens a share-window popup
