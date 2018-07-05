@@ -106,7 +106,7 @@ const ShareComponent = props => {
 
 ## Demo
 
-[View demo](https://github.com/emotion-js/emotion)
+[View demo](https://greglobinski.github.io/react-custom-share/)
 
 #### Run demo on localhost
 
