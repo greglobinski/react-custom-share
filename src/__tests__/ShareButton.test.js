@@ -1,27 +1,98 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import globals from 'globals';
+import { render, cleanup, fireEvent } from 'react-testing-library';
 
 import ShareButton from '../ShareButton';
 import FaTwitter from 'react-icons/lib/fa/twitter';
+import { constants } from 'os';
 
-test('renders without crashing', () => {
-  const container = document.createElement('div');
+afterEach(cleanup);
 
-  //console.log(globals.browser);
+describe('<ShareButton>', () => {
+  test(`renders without crashing when general obligatory props ('url' and 'network') are provided`, () => {
+    const props = {
+      url: 'https://website-to-share.com',
+      network: 'Twitter',
+    };
 
-  const shareButtonProps = {
-    url: 'https://dev.greglobinski.com/what-is-yaml/',
-    text: "Thats's a great web page.",
-    network: 'Twitter',
-  };
+    expect(() => {
+      render(
+        <ShareButton {...props}>
+          <FaTwitter />
+        </ShareButton>
+      );
+    }).not.toThrow();
+  });
 
-  ReactDOM.render(
-    <ShareButton {...shareButtonProps}>
-      <FaTwitter />
-    </ShareButton>,
-    container
-  );
+  test(`throws error when an obligatory prop 'network' is not provided`, () => {
+    const props = {
+      url: 'https://website-to-share.com',
+    };
 
-  ReactDOM.unmountComponentAtNode(container);
+    expect(() => {
+      render(
+        <ShareButton {...props}>
+          <FaTwitter />
+        </ShareButton>
+      );
+    }).toThrow();
+  });
+
+  test(`throws error when an obligatory prop 'url' is not provided`, () => {
+    const props = {
+      network: 'Twitter',
+    };
+
+    expect(() => {
+      render(
+        <ShareButton {...props}>
+          <FaTwitter />
+        </ShareButton>
+      );
+    }).toThrow();
+  });
+
+  test(`throws error when an obligatory prop 'media' for Pinterest 'network' is not provided`, () => {
+    const props = {
+      network: 'Pinterest',
+      url: 'https://website-to-share.com',
+    };
+
+    expect(() => {
+      render(
+        <ShareButton {...props}>
+          <FaTwitter />
+        </ShareButton>
+      );
+    }).toThrow();
+  });
+
+  test(`when clicked, calls the window's 'open' method with proper params `, () => {
+    const jsdomWindowOpenMethod = window.open;
+    window.open = jest.fn((url, name, params) => {});
+
+    const props = {
+      url: 'https://website-to-share.com',
+      network: 'Twitter',
+    };
+
+    const { getByLabelText } = render(
+      <ShareButton {...props}>
+        <FaTwitter />
+      </ShareButton>
+    );
+
+    const button = getByLabelText(new RegExp(props.network));
+    fireEvent.click(button);
+
+    expect(window.open).toBeCalledTimes(1);
+    expect(window.open).toHaveBeenCalledWith(
+      'https://twitter.com/share?url=https%3A%2F%2Fwebsite-to-share.com',
+      'share',
+      expect.stringMatching(
+        /^height=\d+,width=\d+,left=\d+,top=\d+,location=no,toolbar=no,status=no,directories=no,menubar=no,scrollbars=yes,resizable=no,centerscreen=yes,chrome=yes/
+      )
+    );
+
+    window.open = jsdomWindowOpenMethod;
+  });
 });

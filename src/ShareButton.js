@@ -15,8 +15,6 @@ class ShareButton extends React.PureComponent {
     this.openShareWindow(networkLink);
   };
 
-  onKeyPress = e => {};
-
   openShareWindow = link => {
     windowOpen(link);
   };
@@ -25,7 +23,11 @@ class ShareButton extends React.PureComponent {
     const { network, children, className } = this.props;
 
     return (
-      <button className={`${className}`} aria-label={`share on ${network}`} onClick={this.onClick}>
+      <button
+        className={`${className}`}
+        aria-label={`Share on ${network}`}
+        onClick={this.onClick}
+      >
         {children}
       </button>
     );
@@ -38,6 +40,14 @@ ShareButton.propTypes = {
   text: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
+  media: function(props, propName, componentName) {
+    const key = props['network'].toLowerCase();
+    if (key === 'pinterest' && props[propName] === undefined) {
+      return new Error(
+        `The prop '${propName}' is marked as required in '${componentName}' for the 'Pinterest' network, but it's value is 'undefined'.`
+      );
+    }
+  },
 };
 
 export default ShareButton;

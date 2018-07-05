@@ -52,7 +52,9 @@ function getNetworkLink(params) {
   }
 
   if (!isValidNetwork(key)) {
-    throw new Error(`the '${key}' is not a valid value of a 'network' prop for ShareButton`);
+    throw new Error(
+      `the 'network' prop's value is not a valid value for ShareButton`
+    );
   }
 
   if (!url) {

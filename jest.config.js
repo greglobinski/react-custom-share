@@ -1,16 +1,17 @@
 module.exports = {
+  setupFiles: [
+    '<rootDir>/test/throwOnPropTypeError.js',
+    //'<rootDir>/test/windowMock.js',
+  ],
   coverageDirectory: './coverage/',
   collectCoverageFrom: ['./src/**/*.js'],
   testRegex: '(/src/{0,1}.*/__tests__/.*)\\.jsx?$',
   coverageThreshold: {
     global: {
-      statements: 8,
-      branches: 4,
-      functions: 10,
-      lines: 8,
+      statements: 38,
+      branches: 73,
+      functions: 54,
+      lines: 37,
     },
-  },
-  moduleNameMapper: {
-    '\\.css$': require.resolve('./test/styleMock.js'),
   },
 };

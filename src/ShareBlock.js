@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ShareBlock = props => {
-  const { url, button: Button, buttons, text = '', className = '' } = props;
+  const { url, button: Button, buttons, text, className } = props;
 
   return (
     <div className={`${className}`}>
@@ -10,7 +10,13 @@ const ShareBlock = props => {
         const { network, icon: Icon, ...rest } = button;
 
         return (
-          <Button key={network} network={network} url={url} text={text} {...rest}>
+          <Button
+            key={network}
+            network={network}
+            url={url}
+            text={text}
+            {...rest}
+          >
             <Icon />
           </Button>
         );
