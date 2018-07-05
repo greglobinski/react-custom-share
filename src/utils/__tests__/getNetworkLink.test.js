@@ -4,11 +4,32 @@ const urlToShare = 'https://website-to-share.com';
 const pictureToShare = 'https://website-to-share.com/picture-to-share.jpg';
 
 describe('function getNetworkLink()', () => {
+  test('returns a proper link for Email', () => {
+    expect(
+      getNetworkLink({
+        network: 'Email',
+        url: urlToShare,
+      })
+    ).toMatch(
+      /^mailto:\?body=%20%0A%0A%C2%BB%20https%3A%2F%2Fwebsite-to-share.com/
+    );
+  });
+
   test('returns a proper link for Facebook', () => {
     expect(
       getNetworkLink({
         network: 'Facebook',
         url: urlToShare,
+      })
+    ).toMatch(
+      /^https:\/\/www.facebook.com\/sharer\/sharer.php\?u=https%3A%2F%2Fwebsite-to-share.com/
+    );
+
+    expect(
+      getNetworkLink({
+        network: 'Facebook',
+        url: urlToShare,
+        text: 'Share comment',
       })
     ).toMatch(
       /^https:\/\/www.facebook.com\/sharer\/sharer.php\?u=https%3A%2F%2Fwebsite-to-share.com/

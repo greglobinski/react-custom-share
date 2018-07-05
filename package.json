@@ -48,7 +48,8 @@
   "peerDependencies": {
     "prop-types": "^15.0.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "emotion": "^9.2.4"
   },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",

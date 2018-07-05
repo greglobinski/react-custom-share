@@ -1,5 +1,6 @@
-import React from 'react';
+import { css } from 'emotion';
 import { render } from 'react-dom';
+import React from 'react';
 
 import {
   ShareButton,
@@ -17,8 +18,6 @@ import FaGooglePlus from 'react-icons/lib/fa/google-plus';
 import FaEnvelope from 'react-icons/lib/fa/envelope';
 import FaPinterest from 'react-icons/lib/fa/pinterest';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
-
-import './index.css';
 
 const App = props => {
   const shareBlockProps = {
@@ -42,16 +41,57 @@ const App = props => {
   };
 
   return (
-    <div className="app">
-      <ShareBlockStandard {...shareBlockProps} />
-      <ShareBlockStandard {...shareBlockProps} button={ShareButtonRectangle} />
-      <ShareBlockStandard
-        {...shareBlockProps}
-        button={ShareButtonRoundSquare}
-      />
-      <ShareBlockStandard {...shareBlockProps} button={ShareButtonCircle} />
-      <ShareBlockStandard {...shareBlockProps} button={ShareButtonIconOnly} />
-      <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />
+    <div
+      className={css`
+        font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        margin: 0 auto;
+        max-width: 600px;
+
+        section {
+          margin: 50px 0;
+        }
+
+        h3 {
+          padding: 20px 0;
+          text-align: center;
+          font-size: 24px;
+          font-weight: normal;
+          color: #666;
+        }
+      `}
+    >
+      <section>
+        <h3>{'<ShareButton />'}</h3>
+        <ShareBlockStandard {...shareBlockProps} />
+      </section>
+      <section>
+        <h3>{'<ShareButtonRectangle />'}</h3>
+        <ShareBlockStandard
+          {...shareBlockProps}
+          button={ShareButtonRectangle}
+        />
+      </section>
+      <section>
+        <h3>{'<ShareButtonRoundSquare />'}</h3>
+        <ShareBlockStandard
+          {...shareBlockProps}
+          button={ShareButtonRoundSquare}
+        />
+      </section>
+      <section>
+        <h3>{'<ShareButtonCircle />'}</h3>
+        <ShareBlockStandard {...shareBlockProps} button={ShareButtonCircle} />
+      </section>
+      <section>
+        <h3>{'<ShareButtonIconOnly />'}</h3>
+        <ShareBlockStandard {...shareBlockProps} button={ShareButtonIconOnly} />
+      </section>
+      <section>
+        <h3>{'<ShareButtonOutline />'}</h3>
+        <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />
+      </section>
     </div>
   );
 };
