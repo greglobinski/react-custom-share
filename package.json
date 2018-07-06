@@ -25,11 +25,8 @@
   ],
   "author": "greg lobinski <greglobinski@gmail.com> (https://www.greglobinski.com/)",
   "license": "MIT",
-  "homepage": "https:/github.com/greglobinski/react-custom-share#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/greglobinski/react-custom-share.git"
-  },
+  "homepage": "https://github.com/greglobinski/react-custom-share#readme",
+  "repository": "github:greglobinski/react-custom-share",
   "keywords": [
     "react",
     "share",

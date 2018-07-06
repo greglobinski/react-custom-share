@@ -4,10 +4,14 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "emotion": "^9.2.4",
+    "emotion-server": "^9.2.4",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-emotion": "^1.1.17",
     "gatsby-plugin-react-helmet": "^2.0.10",
-    "react-custom-share": "^0.0.10",
+    "react-custom-share": "^0.0.11",
+    "react-emotion": "^9.2.4",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7"
   },

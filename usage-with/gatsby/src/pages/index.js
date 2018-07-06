@@ -20,7 +20,7 @@ import FaLinkedin from 'react-icons/lib/fa/linkedin';
 
 const IndexPage = () => {
   const shareBlockProps = {
-    url: 'https://dev.greglobinski.com/what-is-yaml/',
+    url: 'https://github.com/greglobinski/react-custom-share',
     button: ShareButton,
     buttons: [
       { network: 'Twitter', icon: FaTwitter },
@@ -31,11 +31,12 @@ const IndexPage = () => {
         network: 'Pinterest',
         icon: FaPinterest,
         media:
-          'https://dev.greglobinski.com/static/algolia-create-app-550f290e3572463a1916e07985c6ca9b-48538.png',
+          'https://raw.githubusercontent.com/greglobinski/react-custom-share/master/static/react-custom-share.gif',
       },
       { network: 'Linkedin', icon: FaLinkedin },
     ],
-    text: 'TO jest tekst do zsharowania',
+    text: `Give it a try - react-custom-share component`,
+    longtext: `Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch.`,
   };
 
   return (

@@ -21,7 +21,7 @@ import './App.css';
 class App extends Component {
   render() {
     const shareBlockProps = {
-      url: 'https://dev.greglobinski.com/what-is-yaml/',
+      url: 'https://github.com/greglobinski/react-custom-share',
       button: ShareButton,
       buttons: [
         { network: 'Twitter', icon: FaTwitter },
@@ -32,18 +32,25 @@ class App extends Component {
           network: 'Pinterest',
           icon: FaPinterest,
           media:
-            'https://dev.greglobinski.com/static/algolia-create-app-550f290e3572463a1916e07985c6ca9b-48538.png',
+            'https://raw.githubusercontent.com/greglobinski/react-custom-share/master/static/react-custom-share.gif',
         },
         { network: 'Linkedin', icon: FaLinkedin },
       ],
-      text: 'TO jest tekst do zsharowania',
+      text: `Give it a try - react-custom-share component`,
+      longtext: `Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch.`,
     };
 
     return (
       <div className="app">
         <ShareBlockStandard {...shareBlockProps} />
-        <ShareBlockStandard {...shareBlockProps} button={ShareButtonRectangle} />
-        <ShareBlockStandard {...shareBlockProps} button={ShareButtonRoundSquare} />
+        <ShareBlockStandard
+          {...shareBlockProps}
+          button={ShareButtonRectangle}
+        />
+        <ShareBlockStandard
+          {...shareBlockProps}
+          button={ShareButtonRoundSquare}
+        />
         <ShareBlockStandard {...shareBlockProps} button={ShareButtonCircle} />
         <ShareBlockStandard {...shareBlockProps} button={ShareButtonIconOnly} />
         <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />
