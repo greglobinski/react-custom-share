@@ -7,8 +7,8 @@
   "scripts": {
     "develop": "webpack-dev-server --mode development",
     "transpile": "rimraf dist && babel src -d dist --ignore /__tests__/ --copy-files",
-    "build": "rimraf docs-examples/dist && webpack --mode production",
-    "deploy": "gh-pages -d docs-examples/dist",
+    "build": "rimraf demo/dist && webpack --mode production",
+    "deploy": "gh-pages -d demo/dist",
     "publish-demo": "npm run build && npm run deploy",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
@@ -115,6 +115,6 @@
     }
   },
   "release": {
-    "analyzeCommits": "simple-commit-message"
+    "analyzeCommits": " "
   }
 }
