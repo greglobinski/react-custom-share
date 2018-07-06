@@ -1,5 +1,17 @@
 # react-custom-share
 
+[![npm packgage][npm version]][nv]
+[![npm][npm downloads]][nd]
+[![GitHub stars][stars-badge]][stars]
+[![GitHub license][mit-badge]][mit]
+![contributors][contributors-badge]
+[![PRs Welcome][prs-badge]][prs]
+[![Code of Conduct][coc-badge]][coc]
+![travis-badge]
+![Tweet][twitter-badge]
+
+---
+
 Social media share buttons for ReactJS. Use one of the built-in button themes or create a custom one from scratch.
 
 ![react-custom-share](./static/react-custom-share.gif)
@@ -58,7 +70,7 @@ yarn add emotion
 
 ## Usage
 
-```
+```javascript
 // import emotion
 import { css } from 'emotion';
 
@@ -71,13 +83,9 @@ import FaPinterest from 'react-icons/lib/fa/pinterest';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
 
 // import react-custom-share components
-import {
-  ShareButtonRectangle,
-  ShareBlockStandard,
-} from 'react-custom-share';
+import { ShareButtonRectangle, ShareBlockStandard } from 'react-custom-share';
 
 const ShareComponent = props => {
-
   // create object with props for shareBlock
   const shareBlockProps = {
     url: 'https://github.com/greglobinski/react-custom-share',
@@ -99,11 +107,8 @@ const ShareComponent = props => {
     longtext: `Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch.`,
   };
 
-  return (
-    <ShareBlockStandard {...shareBlockProps} />
-  )
-
-}
+  return <ShareBlockStandard {...shareBlockProps} />;
+};
 ```
 
 ## Demo
@@ -155,3 +160,20 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+[travis-badge]: https://img.shields.io/travis/greglobinski/common-last-names.svg
+[mit-badge]: https://img.shields.io/github/license/greglobinski/common-last-names.svg
+[mit]: https://github.com/greglobinski/common-last-names/blob/master/LICENSE
+[twitter]: https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fgreglobinski%2Freact-custom-share
+[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/greglobinski/react-custom-share.svg?style=social
+[coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
+[coc]: https://github.com/greglobinski/react-custom-share/blob/master/CODE_OF_CONDUCT.md
+[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[prs]: http://makeapullrequest.com
+[contributors-badge]: https://img.shields.io/github/contributors/greglobinski/react-custom-share.svg
+[npm downloads]: https://img.shields.io/npm/dt/react-custom-share.svg
+[nd]: https://www.npmjs.com/package/react-custom-share
+[npm version]: https://badge.fury.io/js/react-custom-share.svg
+[nv]: https://badge.fury.io/js/react-custom-share
+[stars-badge]: https://img.shields.io/github/stars/greglobinski/react-custom-share.svg
+[stars]: https://github.com/greglobinski/react-custom-share/stargazers
