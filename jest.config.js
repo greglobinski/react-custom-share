@@ -1,7 +1,6 @@
 module.exports = {
   setupFiles: [
     '<rootDir>/test/throwOnPropTypeError.js',
-    //'<rootDir>/test/windowMock.js',
   ],
   coverageDirectory: './coverage/',
   collectCoverageFrom: ['./src/**/*.js'],
