@@ -161,11 +161,15 @@ import {
 ```javascript
 ShareButton.propTypes = {
   // required props
+
+  // network: social network name, one of the list: Twitter, Facebook, GooglePlus, Pinterest, Linkedin or Email
   network: PropTypes.string.isRequired,
+  // url: the address of the page you want to share, 'https://mywebpage.com/'
   url: PropTypes.string.isRequired,
+  // children: for the styled components it must be a svg icon, in other case it could be anything
   children: PropTypes.node.isRequired,
 
-  // media is a special 'prop' it's required is network's value is 'Pinterest'
+  // media: this is a special 'prop' it's required is network's value is 'Pinterest'
   media: function(props, propName, componentName) {
     const key = props['network'].toLowerCase();
     if (key === 'pinterest' && props[propName] === undefined) {
@@ -176,8 +180,12 @@ ShareButton.propTypes = {
   },
 
   // optional props
+
+  // text: short version of message you want to share with the url
   text: PropTypes.string,
+  // longtext: additional text message, if it's possible and set it's concatenated to the `text` and serve as a comment with the shared url
   longtext: PropTypes.string,
+  // CSS style class applied to the button
   className: PropTypes.string,
 };
 ```
@@ -186,7 +194,7 @@ ShareButton.propTypes = {
 
 ```javascript
 ShareBlock.propTypes = {
-  // props applied to each one of the buttons rendered by the block
+  // props applied to each one of the buttons rendered by the block, explained already above
   url: PropTypes.string.isRequired,
   button: PropTypes.func.isRequired,
   buttons: PropTypes.array.isRequired,
@@ -194,7 +202,10 @@ ShareBlock.propTypes = {
   longtext: PropTypes.string,
 
   // block's own props
+
+  // text to render above the buttons
   header: PropTypes.string,
+  // CSS style class applied to the block's outer div element
   className: PropTypes.string,
 };
 ```
