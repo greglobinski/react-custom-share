@@ -37,9 +37,9 @@ Social media share buttons for ReactJS. Use one of the built-in button themes or
 
 ## Roadmap
 
-- Add built-in scripts for more networks
-- Add functionality to create a share script for any social network
 - Add more built-in styled buttons/blocks
+- Add functionality to create a share script for any social network
+- Add built-in scripts for more networks
 - Add share counts
 
 ## Installation
