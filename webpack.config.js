@@ -16,6 +16,10 @@ module.exports = {
         },
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   resolve: {
@@ -30,4 +34,5 @@ module.exports = {
       filename: './index.html',
     }),
   ],
+  performance: { hints: false },
 };
