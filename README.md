@@ -1,5 +1,3 @@
-# react-custom-share
-
 [![npm packgage][npm version]][nv]
 [![npm][npm downloads]][nd]
 [![GitHub stars][stars-badge]][stars]
@@ -10,11 +8,13 @@
 ![travis-badge]
 ![Tweet][twitter-badge]
 
----
+# react-custom-share
 
 Social media share buttons for ReactJS. Use one of the built-in button themes or create a custom one from scratch.
 
 ![react-custom-share](./static/react-custom-share.gif)
+
+> [view DEMO](https://greglobinski.github.io/react-custom-share/)
 
 ## Features
 
@@ -88,23 +88,18 @@ import { ShareButtonRectangle, ShareBlockStandard } from 'react-custom-share';
 const ShareComponent = props => {
   // create object with props for shareBlock
   const shareBlockProps = {
-    url: 'https://github.com/greglobinski/react-custom-share',
+    url: 'https://mywebsite.com/page-to-share/',
     button: ShareButtonRectangle,
     buttons: [
       { network: 'Twitter', icon: FaTwitter },
       { network: 'Facebook', icon: FaFacebook },
       { network: 'GooglePlus', icon: FaGooglePlus },
       { network: 'Email', icon: FaEnvelope },
-      {
-        network: 'Pinterest',
-        icon: FaPinterest,
-        media:
-          'https://raw.githubusercontent.com/greglobinski/react-custom-share/master/static/react-custom-share.gif',
-      },
+      { network: 'Pinterest', icon: FaPinterest, media: 'https://mywebsite.com/image-to-share.jpg' },
       { network: 'Linkedin', icon: FaLinkedin },
     ],
-    text: `Give it a try - react-custom-share component`,
-    longtext: `Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch.`,
+    text: `Give it a try - mywebsite.com `,
+    longtext: `Take a look at this super website I have just found.`,
   };
 
   return <ShareBlockStandard {...shareBlockProps} />;
