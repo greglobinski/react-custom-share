@@ -185,6 +185,7 @@ const App = props => {
 
         <StyledButtonExample
           shareBlockProps={{ ...shareBlockProps, button: ShareButtonRectangle }}
+          buttonComponentName="ShareButtonRectangle"
           ordinal="A"
         />
 
@@ -193,21 +194,25 @@ const App = props => {
             ...shareBlockProps,
             button: ShareButtonRoundSquare,
           }}
+          buttonComponentName="ShareButtonRoundSquare"
           ordinal="B"
         />
 
         <StyledButtonExample
           shareBlockProps={{ ...shareBlockProps, button: ShareButtonCircle }}
+          buttonComponentName="ShareButtonCircle"
           ordinal="C"
         />
 
         <StyledButtonExample
           shareBlockProps={{ ...shareBlockProps, button: ShareButtonIconOnly }}
+          buttonComponentName="ShareButtonIconOnly"
           ordinal="D"
         />
 
         <StyledButtonExample
           shareBlockProps={{ ...shareBlockProps, button: ShareButtonOutline }}
+          buttonComponentName="ShareButtonOutline"
           ordinal="E"
         />
       </section>
