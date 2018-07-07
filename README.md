@@ -24,8 +24,8 @@ Social media share buttons for ReactJS. Use one of the built-in button themes or
 * [Roadmap](#roadmap)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Demo](#demo)
 * [API](#api)
+* [Repository](#repository)
 * [License](#license)
 
 ## Features
@@ -117,33 +117,6 @@ const ShareComponent = props => {
   return <ShareBlockStandard {...shareBlockProps} />;
 };
 ```
-
-## Demo
-
-[View demo](https://greglobinski.github.io/react-custom-share/)
-
-#### Run demo on localhost
-
-Clone `react-custom-share` package.
-
-```
-git clone https://github.com/greglobinski/react-custom-share.git
-```
-
-Move into newly created folder and install dependencies.
-
-```
-cd react-custom-share
-yarn install
-```
-
-After installation run the `develop` npm script.
-
-```
-yarn develop
-```
-
-Open the `http://localhost:3001/` address in your browser.
 
 ## API
 
@@ -242,6 +215,31 @@ const ShareButtonCircle = props => {
 
 export default ShareButtonCircle;
 ```
+
+## Repository
+
+To run [demo](https://greglobinski.github.io/react-custom-share/) on localhost
+
+**1.** Clone `react-custom-share` package.
+
+```
+git clone https://github.com/greglobinski/react-custom-share.git
+```
+
+**2.** Move into newly created folder and install dependencies.
+
+```
+cd react-custom-share
+yarn install
+```
+
+**3.** After installation run the `develop` npm script.
+
+```
+yarn develop
+```
+
+**4.** Open the `http://localhost:3001/` address in your browser.
 
 ## License
 
