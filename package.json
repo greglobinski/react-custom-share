@@ -118,6 +118,6 @@
     }
   },
   "release": {
-    "analyzeCommits": " "
+    "analyzeCommits": "simple-commit-message"
   }
 }
