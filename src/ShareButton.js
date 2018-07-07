@@ -35,9 +35,10 @@ class ShareButton extends React.PureComponent {
 ShareButton.propTypes = {
   network: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   text: PropTypes.string,
-  children: PropTypes.node,
-  className: PropTypes.string,
+  longtext: PropTypes.string,
+  // media prop is required when network is set to 'Pinterest'
   media: function(props, propName, componentName) {
     const key = props['network'].toLowerCase();
     if (key === 'pinterest' && props[propName] === undefined) {
@@ -46,6 +47,7 @@ ShareButton.propTypes = {
       );
     }
   },
+  className: PropTypes.string,
 };
 
 export default ShareButton;

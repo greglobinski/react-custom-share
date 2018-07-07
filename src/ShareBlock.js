@@ -25,6 +25,8 @@ ShareBlock.propTypes = {
   button: PropTypes.func.isRequired,
   buttons: PropTypes.array.isRequired,
   text: PropTypes.string,
+  longtext: PropTypes.string,
+  header: PropTypes.string,
   className: PropTypes.string,
 };
 

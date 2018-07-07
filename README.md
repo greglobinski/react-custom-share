@@ -138,6 +138,91 @@ yarn develop
 
 Open the `http://localhost:3001/` address in your browser.
 
+## API
+
+```javascript
+import {
+  // base components (unstyled)
+  ShareButton,
+  ShareBlock,
+  // styled button components
+  ShareButtonRoundSquare,
+  ShareButtonRectangle,
+  ShareButtonCircle,
+  ShareButtonIconOnly,
+  ShareButtonOutline,
+  // styled block components
+  ShareBlockStandard,
+} from 'react-custom-share';
+```
+
+### `ShareButton` props
+
+```javascript
+ShareButton.propTypes = {
+  // required props
+  network: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+
+  // media is a special 'prop' it's required is network's value is 'Pinterest'
+  media: function(props, propName, componentName) {
+    const key = props['network'].toLowerCase();
+    if (key === 'pinterest' && props[propName] === undefined) {
+      return new Error(
+        `The prop '${propName}' is marked as required in '${componentName}' for the 'Pinterest' network, but it's value is 'undefined'.`
+      );
+    }
+  },
+
+  // optional props
+  text: PropTypes.string,
+  longtext: PropTypes.string,
+  className: PropTypes.string,
+};
+```
+
+### `ShareBlock` props
+
+```javascript
+ShareBlock.propTypes = {
+  // props applied to each one of the buttons rendered by the block
+  url: PropTypes.string.isRequired,
+  button: PropTypes.func.isRequired,
+  buttons: PropTypes.array.isRequired,
+  text: PropTypes.string,
+  longtext: PropTypes.string,
+
+  // block's own props
+  header: PropTypes.string,
+  className: PropTypes.string,
+};
+```
+
+### Built-in styled components
+
+Styled components have the same api as its base versions. They work as wrappers for the base components and set the value of the `className` prop of the inner component they wrap.
+
+Below is the simplified code of `ShareButtonCircle`, one of the built-in styled buttons.
+
+```javascript
+import { css } from 'emotion';
+
+const ShareButtonCircle = props => {
+  return (
+    <ShareButton
+      className={css`
+        border-radius: 50%;
+        /* ... for the clarity most of the real CSS code was removed */
+      `}
+      {...props}
+    />
+  );
+};
+
+export default ShareButtonCircle;
+```
+
 ## License
 
 The MIT License (MIT)
