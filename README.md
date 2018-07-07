@@ -99,7 +99,7 @@ const ShareComponent = props => {
         network: 'Pinterest',
         icon: FaPinterest,
         media:
-          'https://dev.greglobinski.com/static/algolia-create-app-550f290e3572463a1916e07985c6ca9b-48538.png',
+          'https://raw.githubusercontent.com/greglobinski/react-custom-share/master/static/react-custom-share.gif',
       },
       { network: 'Linkedin', icon: FaLinkedin },
     ],
