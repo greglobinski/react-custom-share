@@ -5,7 +5,7 @@ import React from 'react';
 import colors from './colors';
 import ShareButton from '../ShareButton';
 
-const ShareButtonCircle = props => {
+const ShareButtonIconOnly = props => {
   return (
     <ShareButton
       className={css`
@@ -65,11 +65,11 @@ const ShareButtonCircle = props => {
   );
 };
 
-ShareButtonCircle.propTypes = {
+ShareButtonIconOnly.propTypes = {
   network: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   text: PropTypes.string,
 };
 
-export default ShareButtonCircle;
+export default ShareButtonIconOnly;
