@@ -1,3 +1,7 @@
+# react-custom-share
+
+Social media share buttons for ReactJS. Use one of the built-in button themes or create a custom one from scratch.
+
 [![npm packgage][npm version]][nv]
 [![npm][npm downloads]][nd]
 [![GitHub stars][stars-badge]][stars]
@@ -8,13 +12,21 @@
 ![travis-badge]
 ![Tweet][twitter-badge]
 
-# react-custom-share
-
-Social media share buttons for ReactJS. Use one of the built-in button themes or create a custom one from scratch.
+---
 
 ![react-custom-share](./static/react-custom-share.gif)
 
-> [view DEMO](https://greglobinski.github.io/react-custom-share/)
+> ### [DEMO](https://greglobinski.github.io/react-custom-share/)
+
+## Table of Content
+
+* [Features](#features)
+* [Roadmap](#roadmap)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Demo](#demo)
+* [API](#api)
+* [License](#license)
 
 ## Features
 
@@ -140,12 +152,14 @@ import {
   // base components (unstyled)
   ShareButton,
   ShareBlock,
+
   // styled button components
   ShareButtonRoundSquare,
   ShareButtonRectangle,
   ShareButtonCircle,
   ShareButtonIconOnly,
   ShareButtonOutline,
+
   // styled block components
   ShareBlockStandard,
 } from 'react-custom-share';
@@ -155,8 +169,7 @@ import {
 
 ```javascript
 ShareButton.propTypes = {
-  // required props
-
+  /* REQUIRED props */
   // network: social network name, one of the list: Twitter, Facebook, GooglePlus, Pinterest, Linkedin or Email
   network: PropTypes.string.isRequired,
   // url: the address of the page you want to share, 'https://mywebpage.com/'
@@ -164,6 +177,7 @@ ShareButton.propTypes = {
   // children: for the styled components it must be a svg icon, in other case it could be anything
   children: PropTypes.node.isRequired,
 
+  /* SPECIAL props */
   // media: this is a special 'prop' it's required is network's value is 'Pinterest'
   media: function(props, propName, componentName) {
     const key = props['network'].toLowerCase();
@@ -174,8 +188,7 @@ ShareButton.propTypes = {
     }
   },
 
-  // optional props
-
+  /* OPTIONAL props */
   // text: short version of message you want to share with the url
   text: PropTypes.string,
   // longtext: additional text message, if it's possible and set it's concatenated to the `text` and serve as a comment with the shared url
@@ -189,6 +202,8 @@ ShareButton.propTypes = {
 
 ```javascript
 ShareBlock.propTypes = {
+
+  /* BUTTON's props */
   // props applied to each one of the buttons rendered by the block, explained already above
   url: PropTypes.string.isRequired,
   button: PropTypes.func.isRequired,
@@ -196,8 +211,7 @@ ShareBlock.propTypes = {
   text: PropTypes.string,
   longtext: PropTypes.string,
 
-  // block's own props
-
+  /* BLOCK's own props */
   // text to render above the buttons
   header: PropTypes.string,
   // CSS style class applied to the block's outer div element
