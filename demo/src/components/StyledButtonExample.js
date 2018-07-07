@@ -44,7 +44,7 @@ const StyledButtonExample = props => {
       </PrismCode>
       <p>
         And that's the result. The{' '}
-        <code className="language-javascript">ShareBlockStandard</code> renderd
+        <code className="language-javascript">ShareBlockStandard</code> rendered
         six built-in styled buttons -{' '}
         <code className="language-javascript">{buttonComponentName}</code>.
       </p>
