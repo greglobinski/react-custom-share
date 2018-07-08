@@ -6,7 +6,6 @@ exports[`<ShareButtonRoundSquare> renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: rgba(99,205,241,1);
   border: 0;
   border-radius: 8%;
   cursor: pointer;
@@ -23,6 +22,7 @@ exports[`<ShareButtonRoundSquare> renders correctly 1`] = `
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 44px;
+  background: rgba(99,205,241,1);
 }
 
 .emotion-0 > svg {

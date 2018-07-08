@@ -26,17 +26,11 @@ exports[`<ShareButtonIconOnly> renders correctly 1`] = `
 }
 
 .emotion-0 > svg {
-  fill: rgba(99,205,241,1);
   height: 65%;
   -webkit-transition: -webkit-transform 0.3s;
   -webkit-transition: transform 0.3s;
   transition: transform 0.3s;
   width: 65%;
-}
-
-.emotion-0:hover {
-  background: rgba(99,205,241,1);
-  box-shadow: 0 0 10px rgba(99,205,241,1);
 }
 
 .emotion-0:hover > svg {
@@ -47,10 +41,6 @@ exports[`<ShareButtonIconOnly> renders correctly 1`] = `
   .emotion-0:hover {
     background: none;
     box-shadow: none;
-  }
-
-  .emotion-0:hover > svg {
-    fill: rgba(99,205,241,1);
   }
 }
 
@@ -69,6 +59,21 @@ exports[`<ShareButtonIconOnly> renders correctly 1`] = `
 @media (min-width:1025px) {
   .emotion-0 {
     margin: 10px;
+  }
+}
+
+.emotion-0 > svg {
+  fill: rgba(99,205,241,1);
+}
+
+.emotion-0:hover {
+  background: rgba(99,205,241,1);
+  box-shadow: 0 0 10px rgba(99,205,241,1);
+}
+
+@media (any-hover:none) {
+  .emotion-0:hover > svg {
+    fill: rgba(99,205,241,1);
   }
 }
 

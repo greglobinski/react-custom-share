@@ -35,12 +35,6 @@ exports[`<ShareButtonOutline> renders correctly 1`] = `
   width: 80%;
 }
 
-.emotion-0:hover > svg {
-  fill: rgba(99,205,241,1);
-  -webkit-filter: none;
-  filter: none;
-}
-
 @media (any-hover:none) {
   .emotion-0:hover > svg {
     fill: white;
@@ -65,6 +59,12 @@ exports[`<ShareButtonOutline> renders correctly 1`] = `
   .emotion-0 {
     margin: 10px;
   }
+}
+
+.emotion-0:hover > svg {
+  fill: rgba(99,205,241,1);
+  -webkit-filter: none;
+  filter: none;
 }
 
 <button

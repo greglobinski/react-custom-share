@@ -47,7 +47,7 @@ ShareButton.propTypes = {
       );
     }
   },
-  className: PropTypes.string,
+  className: PropTypes.any,
 };
 
 export default ShareButton;

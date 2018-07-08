@@ -6,7 +6,6 @@ exports[`<ShareButtonRectangle> renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: rgba(99,205,241,1);
   border: 0;
   color: #666;
   cursor: pointer;
@@ -30,6 +29,7 @@ exports[`<ShareButtonRectangle> renders correctly 1`] = `
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+  background: rgba(99,205,241,1);
 }
 
 .emotion-0 > svg {

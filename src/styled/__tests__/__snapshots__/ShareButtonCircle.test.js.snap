@@ -6,7 +6,6 @@ exports[`<ShareButtonCircle> renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: rgba(99,205,241,1);
   border: 0;
   border-radius: 50%;
   cursor: pointer;
@@ -24,6 +23,7 @@ exports[`<ShareButtonCircle> renders correctly 1`] = `
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 44px;
+  background: rgba(99,205,241,1);
 }
 
 .emotion-0::before {
