@@ -26,6 +26,7 @@ Social media share buttons for ReactJS. Use one of the built-in button themes or
 * [Usage](#usage)
 * [API](#api)
 * [Repository](#repository)
+* [Tutorials](#tutorials)
 * [License](#license)
 
 ## Features
@@ -240,6 +241,10 @@ yarn develop
 ```
 
 **4.** Open the `http://localhost:3001/` address in your browser.
+
+## Tutorials
+
+* [How to add custom social share buttons to GatsbyJS blog (part 1)](https://dev.greglobinski.com/add-custom-social-share-buttons-to-gatsby-blog/)
 
 ## License
 
