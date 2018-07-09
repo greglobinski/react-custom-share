@@ -1,57 +1,101 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
+import get from 'lodash/get'
+import Helmet from 'react-helmet'
 
-import {
-  ShareButton,
-  ShareButtonRoundSquare,
-  ShareButtonRectangle,
-  ShareButtonCircle,
-  ShareButtonIconOnly,
-  ShareButtonOutline,
-  ShareBlockStandard,
-} from 'react-custom-share';
+import Bio from '../components/Bio'
+import { rhythm } from '../utils/typography'
 
-import FaTwitter from 'react-icons/lib/fa/twitter';
-import FaFacebook from 'react-icons/lib/fa/facebook';
-import FaGooglePlus from 'react-icons/lib/fa/google-plus';
-import FaEnvelope from 'react-icons/lib/fa/envelope';
-import FaPinterest from 'react-icons/lib/fa/pinterest';
-import FaLinkedin from 'react-icons/lib/fa/linkedin';
+import FaTwitter from 'react-icons/lib/fa/twitter'
+import FaFacebook from 'react-icons/lib/fa/facebook'
+import FaGooglePlus from 'react-icons/lib/fa/google-plus'
+import FaEnvelope from 'react-icons/lib/fa/envelope'
+import FaPinterest from 'react-icons/lib/fa/pinterest'
+import FaLinkedin from 'react-icons/lib/fa/linkedin'
 
-const IndexPage = () => {
-  const shareBlockProps = {
-    url: 'https://github.com/greglobinski/react-custom-share',
-    button: ShareButton,
-    buttons: [
-      { network: 'Twitter', icon: FaTwitter },
-      { network: 'Facebook', icon: FaFacebook },
-      { network: 'GooglePlus', icon: FaGooglePlus },
-      { network: 'Email', icon: FaEnvelope },
-      {
-        network: 'Pinterest',
-        icon: FaPinterest,
-        media:
-          'https://raw.githubusercontent.com/greglobinski/react-custom-share/master/static/react-custom-share.gif',
-      },
-      { network: 'Linkedin', icon: FaLinkedin },
-    ],
-    text: `Give it a try - react-custom-share component`,
-    longtext: `Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch.`,
-  };
+import { css } from 'emotion'
 
-  return (
-    <div>
-      <ShareBlockStandard {...shareBlockProps} />
-      <ShareBlockStandard {...shareBlockProps} button={ShareButtonRectangle} />
-      <ShareBlockStandard
-        {...shareBlockProps}
-        button={ShareButtonRoundSquare}
-      />
-      <ShareBlockStandard {...shareBlockProps} button={ShareButtonCircle} />
-      <ShareBlockStandard {...shareBlockProps} button={ShareButtonIconOnly} />
-      <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />
-    </div>
-  );
-};
+import { ShareButtonRectangle, ShareBlockStandard } from '../../../../src/'
 
-export default IndexPage;
+class BlogIndex extends React.Component {
+  render() {
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+
+    const customStyles = css`
+      border-radius: 50% 0 50% 0;
+      margin: 0 10px;
+      flex-basis: 60px;
+      height: 60px;
+      flex-grow: 0;
+    `
+
+    const shareBlockProps = {
+      url: 'https://mywebsite.com/page-to-share/',
+      button: ShareButtonRectangle,
+      buttons: [
+        { network: 'Twitter', icon: FaTwitter },
+        { network: 'Facebook', icon: FaFacebook },
+        { network: 'GooglePlus', icon: FaGooglePlus },
+        { network: 'Email', icon: FaEnvelope },
+        {
+          network: 'Pinterest',
+          icon: FaPinterest,
+          media: 'https://mywebsite.com/image-to-share.jpg',
+        },
+        { network: 'Linkedin', icon: FaLinkedin },
+      ],
+      text: `Give it a try - mywebsite.com `,
+      longtext: `Take a look at this super website I have just found.`,
+      buttonCustomClassName: customStyles,
+    }
+
+    return (
+      <div>
+        <Helmet title={siteTitle} />
+        <Bio />
+        {posts.map(({ node }) => {
+          const title = get(node, 'frontmatter.title') || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3 style={{ marginBottom: rhythm(1 / 4) }}>
+                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            </div>
+          )
+        })}
+        <ShareBlockStandard {...shareBlockProps} />
+      </div>
+    )
+  }
+}
+
+export default BlogIndex
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "DD MMMM, YYYY")
+            title
+          }
+        }
+      }
+    }
+  }
+`
