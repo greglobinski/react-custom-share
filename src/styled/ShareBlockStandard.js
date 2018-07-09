@@ -1,5 +1,4 @@
 import { css } from 'emotion';
-import PropTypes from 'prop-types';
 import React from 'react';
 
 import ShareBlock from '../ShareBlock';
@@ -15,11 +14,6 @@ const ShareBlockStandard = props => {
   return <ShareBlock className={styles} {...props} />;
 };
 
-ShareBlockStandard.propTypes = {
-  url: PropTypes.string.isRequired,
-  button: PropTypes.func.isRequired,
-  buttons: PropTypes.array.isRequired,
-  text: PropTypes.string,
-};
+ShareBlockStandard.propTypes = {};
 
 export default ShareBlockStandard;

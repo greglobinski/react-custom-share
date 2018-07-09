@@ -66,19 +66,19 @@ const dynamicStyles = props => css`
 `;
 
 const ShareButtonIconOnly = props => {
-  const { className } = props;
+  const { customClassName } = props;
   const dynamicStylesStr = dynamicStyles(props);
 
   return (
     <ShareButton
-      className={cx(styles, dynamicStylesStr, className)}
+      className={cx(styles, dynamicStylesStr, customClassName)}
       {...props}
     />
   );
 };
 
 ShareButtonIconOnly.propTypes = {
-  className: PropTypes.any,
+  customClassName: PropTypes.any,
 };
 
 export default ShareButtonIconOnly;

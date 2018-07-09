@@ -2,7 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ShareBlock = props => {
-  const { url, button: Button, buttons, className, ...blockRest } = props;
+  const {
+    url,
+    button: Button,
+    buttons,
+    className,
+    buttonCustomClassName,
+    ...blockRest
+  } = props;
 
   return (
     <div className={`${className}`}>
@@ -11,7 +18,13 @@ const ShareBlock = props => {
         const rest = { ...blockRest, ...buttonRest };
 
         return (
-          <Button key={network} network={network} url={url} {...rest}>
+          <Button
+            key={network}
+            network={network}
+            url={url}
+            customClassName={buttonCustomClassName}
+            {...rest}
+          >
             <Icon />
           </Button>
         );
@@ -28,6 +41,7 @@ ShareBlock.propTypes = {
   longtext: PropTypes.string,
   header: PropTypes.string,
   className: PropTypes.string,
+  buttonCustomClassName: PropTypes.string,
 };
 
 export default ShareBlock;
