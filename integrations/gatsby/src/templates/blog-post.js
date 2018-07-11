@@ -6,11 +6,18 @@ import get from 'lodash/get'
 import Bio from '../components/Bio'
 import { rhythm, scale } from '../utils/typography'
 
+import CustomReactShare from '../components/CustomReactShare'
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pathContext
+    const excerpt = get(this.props, 'data.excerpt')
+    const url = `${get(this.props, 'data.site.siteMetadata.siteUrl')}${get(
+      this.props,
+      'pathContext.slug'
+    )}`
 
     return (
       <div>
@@ -59,6 +66,12 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
+
+        <CustomReactShare
+          title={post.frontmatter.title}
+          excerpt={excerpt}
+          url={url}
+        />
       </div>
     )
   }
@@ -72,11 +85,13 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
+      excerpt
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
