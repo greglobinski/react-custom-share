@@ -5,7 +5,7 @@
   "dependencies": {
     "emotion": "^9.2.4",
     "react": "^16.4.1",
-    "react-custom-share": "^0.0.11",
+    "react-custom-share": "^0.2.0",
     "react-dom": "^16.4.1",
     "react-icons": "^2.2.7",
     "react-scripts": "1.1.4",
