@@ -54,19 +54,19 @@ const dynamicStyles = props => css`
 `;
 
 const ShareButtonOutline = props => {
-  const { customClassName } = props;
+  const { className, ...rest } = props;
   const dynamicStylesStr = dynamicStyles(props);
 
   return (
     <ShareButton
-      className={cx(styles, dynamicStylesStr, customClassName)}
-      {...props}
+      className={cx(styles, dynamicStylesStr, className)}
+      {...rest}
     />
   );
 };
 
 ShareButtonOutline.propTypes = {
-  customClassName: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default ShareButtonOutline;

@@ -7,8 +7,10 @@ class ShareButton extends React.PureComponent {
   onClick = e => {
     e.preventDefault();
 
-    const { url, network, text = '', longtext = '' } = this.props;
-    const networkLink = getNetworkLink({ network, url, text, longtext });
+    const { url, network, text, longtext, link } = this.props;
+    const networkLink = link
+      ? link
+      : getNetworkLink({ network, url, text, longtext });
 
     this.openShareWindow(networkLink);
   };
@@ -36,6 +38,7 @@ ShareButton.propTypes = {
   network: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  link: PropTypes.string,
   text: PropTypes.string,
   longtext: PropTypes.string,
   // media prop is required when network is set to 'Pinterest'
@@ -47,7 +50,14 @@ ShareButton.propTypes = {
       );
     }
   },
-  className: PropTypes.any,
+  className: PropTypes.string,
+};
+
+ShareButton.defaultProps = {
+  link: '',
+  text: '',
+  lingtext: '',
+  className: '',
 };
 
 export default ShareButton;

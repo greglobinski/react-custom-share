@@ -23,7 +23,8 @@ import FaLinkedin from 'react-icons/lib/fa/linkedin';
 
 import BaseButtonExample from './components/BaseButtonExample';
 import StyledButtonExample from './components/StyledButtonExample';
-import StyledButtonCustomize from './components/StyledButtonCustomize';
+import CustomStyledButtonExample from './components/CustomStyledButtonExample';
+import CustomLinkButtonExample from './components/CustomLinkButtonExample';
 
 require('prismjs/themes/prism-okaidia.css');
 
@@ -166,7 +167,11 @@ const App = props => {
       </section>
 
       <section>
-        <StyledButtonCustomize shareBlockProps={shareBlockProps} />
+        <CustomStyledButtonExample shareBlockProps={shareBlockProps} />
+      </section>
+
+      <section>
+        <CustomLinkButtonExample shareBlockProps={shareBlockProps} />
       </section>
     </div>
   );

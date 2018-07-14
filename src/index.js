@@ -1,3 +1,5 @@
+// utils
+export { default as objectToGetParams } from './utils/objectToGetParams';
 // unstyled default components
 export { default as ShareButton } from './ShareButton';
 export { default as ShareBlock } from './ShareBlock';

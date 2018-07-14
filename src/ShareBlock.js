@@ -7,7 +7,8 @@ const ShareBlock = props => {
     button: Button,
     buttons,
     className,
-    buttonCustomClassName,
+    buttonClassName,
+    header = '',
     ...blockRest
   } = props;
 
@@ -22,7 +23,7 @@ const ShareBlock = props => {
             key={network}
             network={network}
             url={url}
-            customClassName={buttonCustomClassName}
+            className={buttonClassName}
             {...rest}
           >
             <Icon />
@@ -35,13 +36,13 @@ const ShareBlock = props => {
 
 ShareBlock.propTypes = {
   url: PropTypes.string.isRequired,
-  button: PropTypes.func.isRequired,
-  buttons: PropTypes.array.isRequired,
   text: PropTypes.string,
   longtext: PropTypes.string,
+  button: PropTypes.func.isRequired,
+  buttons: PropTypes.array.isRequired,
+  buttonClassName: PropTypes.string,
   header: PropTypes.string,
   className: PropTypes.string,
-  buttonCustomClassName: PropTypes.string,
 };
 
 export default ShareBlock;

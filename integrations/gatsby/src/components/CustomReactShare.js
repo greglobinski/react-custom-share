@@ -6,7 +6,7 @@ import FaTwitter from 'react-icons/lib/fa/twitter'
 import FaFacebook from 'react-icons/lib/fa/facebook'
 import FaGooglePlus from 'react-icons/lib/fa/google-plus'
 
-import { ShareButtonRectangle, ShareBlockStandard } from 'react-custom-share'
+import { ShareButtonRectangle, ShareBlockStandard } from '../../../../src/'
 
 const CustomReactShare = props => {
   const customStyles = css`
@@ -29,7 +29,7 @@ const CustomReactShare = props => {
     ],
     text: title,
     longtext: excerpt,
-    buttonCustomClassName: customStyles,
+    buttonClassName: customStyles,
   }
 
   return <ShareBlockStandard {...shareBlockProps} />

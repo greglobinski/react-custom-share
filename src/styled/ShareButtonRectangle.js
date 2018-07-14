@@ -42,19 +42,19 @@ const dynamicStyles = props => css`
 `;
 
 const ShareButtonRectangle = props => {
-  const { customClassName } = props;
+  const { className, ...rest } = props;
   const dynamicClassName = dynamicStyles(props);
 
   return (
     <ShareButton
-      className={cx(styles, dynamicClassName, customClassName)}
-      {...props}
+      className={cx(styles, dynamicClassName, className)}
+      {...rest}
     />
   );
 };
 
 ShareButtonRectangle.propTypes = {
-  customClassName: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default ShareButtonRectangle;

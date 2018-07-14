@@ -6,7 +6,7 @@ exports[`<ShareBlockStandard> renders correctly 1`] = `
 >
   <button
     aria-label="Share on Twitter"
-    class="undefined"
+    class=""
   >
     <svg
       fill="currentColor"

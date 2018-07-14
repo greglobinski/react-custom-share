@@ -6,7 +6,7 @@ import React from 'react';
 
 import { ShareBlockStandard, ShareButtonRectangle } from '../../../src';
 
-const StyledButtonCustomize = props => {
+const CustomStyledButtonExample = props => {
   const { shareBlockProps } = props;
 
   const customButtonStyles = css`
@@ -73,7 +73,7 @@ const StyledButtonCustomize = props => {
         const shareBlockProps = {
           button: ShareButtonRectangle,
           /* other props the same as in the unstyled button case */
-          buttonCustomClassName: customButtonStyles,
+          buttonClassName: customButtonStyles,
         };
       `}
       </PrismCode>
@@ -87,15 +87,15 @@ const StyledButtonCustomize = props => {
         <ShareBlockStandard
           {...shareBlockProps}
           button={ShareButtonRectangle}
-          buttonCustomClassName={customButtonStyles}
+          buttonClassName={customButtonStyles}
         />
       </div>
     </React.Fragment>
   );
 };
 
-StyledButtonCustomize.propTypes = {
+CustomStyledButtonExample.propTypes = {
   shareBlockProps: PropTypes.object.isRequired,
 };
 
-export default StyledButtonCustomize;
+export default CustomStyledButtonExample;

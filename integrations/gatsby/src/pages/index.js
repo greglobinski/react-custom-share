@@ -47,7 +47,7 @@ class BlogIndex extends React.Component {
       ],
       text: `Give it a try - mywebsite.com `,
       longtext: `Take a look at this super website I have just found.`,
-      buttonCustomClassName: customStyles,
+      buttonClassName: customStyles,
     }
 
     return (

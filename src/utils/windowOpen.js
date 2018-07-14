@@ -1,4 +1,4 @@
-function windowOpen(url, width = 600, height = 400) {
+function windowOpen(url, width = 650, height = 450) {
   const left =
     window.outerWidth / 2 +
     (window.screenX || window.screenLeft || 0) -
@@ -21,7 +21,7 @@ function windowOpen(url, width = 600, height = 400) {
     scrollbars: 'yes',
     resizable: 'no',
     centerscreen: 'yes',
-    chrome: 'yes'
+    chrome: 'yes',
   };
 
   const shareDialog = window.open(

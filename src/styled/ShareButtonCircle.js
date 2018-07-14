@@ -84,19 +84,19 @@ const dynamicStyles = props => css`
 `;
 
 const ShareButtonCircle = props => {
-  const { customClassName } = props;
+  const { className, ...rest } = props;
   const dynamicStylesStr = dynamicStyles(props);
 
   return (
     <ShareButton
-      className={cx(styles, dynamicStylesStr, customClassName)}
-      {...props}
+      className={cx(styles, dynamicStylesStr, className)}
+      {...rest}
     />
   );
 };
 
 ShareButtonCircle.propTypes = {
-  customClassName: PropTypes.any,
+  className: PropTypes.any,
 };
 
 export default ShareButtonCircle;
