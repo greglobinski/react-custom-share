@@ -39,21 +39,15 @@ Social media share buttons for ReactJS. Use one of the built-in button themes or
   - Linkedin
   - Pinterest
   - email
-- built-in styled share buttons:
+- flexibility to add share buttons for unsupported networks
+- built-in styled for buttons:
   - Rectangle
   - RoundSquare
   - Circle
   - IconOnly
   - Outline
-- build-in styled share blocks:
+- build-in styled blocks:
   - Standard
-
-## Roadmap
-
-- Add more built-in styled buttons/blocks
-- Add functionality to create a share script for any social network
-- Add built-in scripts for more networks
-- Add share counts
 
 ## Installation
 
@@ -144,6 +138,7 @@ import {
 ```javascript
 ShareButton.propTypes = {
   /* REQUIRED props */
+
   // network: social network name, one of the list: Twitter, Facebook, GooglePlus, Pinterest, Linkedin or Email
   network: PropTypes.string.isRequired,
   // url: the address of the page you want to share, 'https://mywebpage.com/'
@@ -152,6 +147,7 @@ ShareButton.propTypes = {
   children: PropTypes.node.isRequired,
 
   /* SPECIAL props */
+
   // media: this is a special 'prop' it's required is network's value is 'Pinterest'
   media: function(props, propName, componentName) {
     const key = props['network'].toLowerCase();
@@ -163,12 +159,15 @@ ShareButton.propTypes = {
   },
 
   /* OPTIONAL props */
+
   // text: short version of message you want to share with the url
   text: PropTypes.string,
   // longtext: additional text message, if it's possible and set it's concatenated to the `text` and serve as a comment with the shared url
   longtext: PropTypes.string,
-  // CSS style class applied to the button
+  // className: CSS style class applied to the button
   className: PropTypes.string,
+  // link: 'share link' for not built-in networks
+  link: PropTypes.string,
 };
 ```
 
@@ -186,7 +185,7 @@ ShareBlock.propTypes = {
   longtext: PropTypes.string,
 
   /* BLOCK's own props */
-  // text to render above the buttons
+  // text to render as a header of the share block's section
   header: PropTypes.string,
   // CSS style class applied to the block's outer div element
   className: PropTypes.string,

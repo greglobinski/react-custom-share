@@ -73,6 +73,7 @@ const CustomLinkButtonExample = props => {
         <code className="language-javascript">shareBlockProps</code>'{' '}
         <code className="language-javascript">buttons</code> property.
       </p>
+
       <PrismCode component="pre" className="language-javascript">
         {stripIndent`
         const customRedditStyles = css\`
@@ -94,7 +95,16 @@ const CustomLinkButtonExample = props => {
       </PrismCode>
 
       <p>
-        And that's the result. The{' '}
+        For the not built-in networks you have to provide a 'share link' on your
+        own. When the <code className="language-javascript">link</code> prop is
+        passed to the <code className="language-javascript">ShareButton</code>{' '}
+        the props: <code className="language-javascript">text</code>,{' '}
+        <code className="language-javascript">longtext</code> and{' '}
+        <code className="language-javascript">network</code> are irrelevant.
+      </p>
+
+      <p>
+        And below is the result. The{' '}
         <code className="language-javascript">ShareBlockStandard</code> rendered
         seven built-in styled buttons -{' '}
         <code className="language-javascript">ShareButtonRectangle</code>, and
