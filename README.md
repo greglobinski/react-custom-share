@@ -244,7 +244,8 @@ yarn develop
 
 ## Tutorials
 
-* [How to add custom social share buttons to GatsbyJS blog (part 1)](https://dev.greglobinski.com/add-custom-social-share-buttons-to-gatsby-blog/)
+* [How to add custom social sharing buttons to a GatsbyJS blog's home page](https://dev.greglobinski.com/custom-social-share-buttons-gatsby-1/)
+* [How to add custom social sharing buttons to GatsbyJS blog's posts](https://dev.greglobinski.com/custom-social-share-buttons-gatsby-2/)
 
 ## License
 
