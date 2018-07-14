@@ -81,7 +81,7 @@ const CustomLinkButtonExample = props => {
         const shareBlockProps = {
           /* other props the same as in the 'A.ShareButtonRectangle' example */
           buttons: [
-            /* other networks items the same as in the 'A.ShareButtonRectangle' example */
+            /* other buttons the same as in the 'A.ShareButtonRectangle' example */
             {
               network: 'Reddit',
               icon: FaRedditAlien,
