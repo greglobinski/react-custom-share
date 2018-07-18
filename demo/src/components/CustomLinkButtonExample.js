@@ -38,7 +38,7 @@ const CustomLinkButtonExample = props => {
 
   return (
     <React.Fragment>
-      <h1>A button for a not built-in network</h1>
+      <h1>Buttons for a not built-in network</h1>
       <p>
         At this stage{' '}
         <code className="language-javascript">react-custom-share</code> has

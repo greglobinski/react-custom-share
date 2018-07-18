@@ -12,6 +12,7 @@ import {
   ShareButtonCircle,
   ShareButtonIconOnly,
   ShareButtonOutline,
+  ShareBlockStandard,
 } from '../../src';
 
 import FaTwitter from 'react-icons/lib/fa/twitter';
@@ -20,11 +21,6 @@ import FaGooglePlus from 'react-icons/lib/fa/google-plus';
 import FaEnvelope from 'react-icons/lib/fa/envelope';
 import FaPinterest from 'react-icons/lib/fa/pinterest';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
-
-import BaseButtonExample from './components/BaseButtonExample';
-import StyledButtonExample from './components/StyledButtonExample';
-import CustomStyledButtonExample from './components/CustomStyledButtonExample';
-import CustomLinkButtonExample from './components/CustomLinkButtonExample';
 
 require('prismjs/themes/prism-okaidia.css');
 
@@ -103,76 +99,30 @@ const App = props => {
         }
       `}
     >
-      <header>
-        <h1>react-custom-share - demo</h1>
-        <p>Social share buttons for React</p>
-        <p>
-          Back to Github{' '}
-          <a href="https://github.com/greglobinski/react-custom-share">
-            repository
-          </a>.
-        </p>
-      </header>
-
-      <section>
-        <BaseButtonExample shareBlockProps={shareBlockProps} />
-      </section>
-
-      <section>
-        <h1>Built-in styled buttons usage</h1>
-        <p>
-          There are five buil-in styled buttons in{' '}
-          <code className="language-javascript">react-custom-share</code>
-        </p>
-        <ol type="A">
-          <li>ShareButtonRectangle</li>
-          <li>ShareButtonRoundSquare</li>
-          <li>ShareButtonCircle</li>
-          <li>ShareButtonIconOnly</li>
-          <li>ShareButtonOutline</li>
-        </ol>
-
-        <StyledButtonExample
-          shareBlockProps={{ ...shareBlockProps, button: ShareButtonRectangle }}
-          buttonComponentName="ShareButtonRectangle"
-          ordinal="A"
+      <div className="box">
+        <ShareBlockStandard {...shareBlockProps} />
+      </div>
+      <div className="box">
+        <ShareBlockStandard
+          {...shareBlockProps}
+          button={ShareButtonRectangle}
         />
-
-        <StyledButtonExample
-          shareBlockProps={{
-            ...shareBlockProps,
-            button: ShareButtonRoundSquare,
-          }}
-          buttonComponentName="ShareButtonRoundSquare"
-          ordinal="B"
+      </div>
+      <div className="box">
+        <ShareBlockStandard
+          {...shareBlockProps}
+          button={ShareButtonRoundSquare}
         />
-
-        <StyledButtonExample
-          shareBlockProps={{ ...shareBlockProps, button: ShareButtonCircle }}
-          buttonComponentName="ShareButtonCircle"
-          ordinal="C"
-        />
-
-        <StyledButtonExample
-          shareBlockProps={{ ...shareBlockProps, button: ShareButtonIconOnly }}
-          buttonComponentName="ShareButtonIconOnly"
-          ordinal="D"
-        />
-
-        <StyledButtonExample
-          shareBlockProps={{ ...shareBlockProps, button: ShareButtonOutline }}
-          buttonComponentName="ShareButtonOutline"
-          ordinal="E"
-        />
-      </section>
-
-      <section>
-        <CustomStyledButtonExample shareBlockProps={shareBlockProps} />
-      </section>
-
-      <section>
-        <CustomLinkButtonExample shareBlockProps={shareBlockProps} />
-      </section>
+      </div>
+      <div className="box">
+        <ShareBlockStandard {...shareBlockProps} button={ShareButtonCircle} />
+      </div>
+      <div className="box">
+        <ShareBlockStandard {...shareBlockProps} button={ShareButtonIconOnly} />
+      </div>
+      <div className="box">
+        <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />
+      </div>
     </div>
   );
 };
