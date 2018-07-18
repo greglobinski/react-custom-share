@@ -48,49 +48,8 @@ const App = props => {
   return (
     <div
       className={css`
-        font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto,
-          Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-          sans-serif;
         margin: 0 auto;
         max-width: 600px;
-
-        p {
-          line-height: 1.5;
-        }
-
-        h3 {
-          font-weight: normal;
-        }
-
-        section {
-          padding: 30px 0;
-          margin: 30px 0;
-          border-bottom: 2px dotted #999;
-
-          &:last-child {
-            border: 0;
-          }
-        }
-
-        ol,
-        ul {
-          margin: 0 0 3em 0;
-
-          & li {
-            margin: 0.5em 0;
-          }
-        }
-
-        code[class*='language-'] {
-          border-radius: 2px;
-          background: #f9f9f9;
-          color: #666;
-          padding: 2px 5px;
-        }
-
-        pre {
-          margin: 1em 0 3em;
-        }
 
         .box {
           padding: 50px 0;

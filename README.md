@@ -177,6 +177,7 @@ ShareButton.propTypes = {
 ShareBlock.propTypes = {
 
   /* BUTTON's props */
+
   // props applied to each one of the buttons rendered by the block, explained already above
   url: PropTypes.string.isRequired,
   button: PropTypes.func.isRequired,
@@ -185,8 +186,7 @@ ShareBlock.propTypes = {
   longtext: PropTypes.string,
 
   /* BLOCK's own props */
-  // text to render as a header of the share block's section
-  header: PropTypes.string,
+
   // CSS style class applied to the block's outer div element
   className: PropTypes.string,
 };
