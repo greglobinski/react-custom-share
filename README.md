@@ -16,7 +16,7 @@ Social media share buttons for ReactJS. Use one of the built-in button themes or
 
 ![react-custom-share](./static/react-custom-share.gif)
 
-> ### [DEMO](https://greglobinski.github.io/react-custom-share/)
+> ### [Docs & Demos](https://greglobinski.github.io/react-custom-share/)
 
 ## Table of Content
 
@@ -218,9 +218,9 @@ export default ShareButtonCircle;
 
 ## Repository
 
-To run [demo](https://greglobinski.github.io/react-custom-share/) on localhost
+To run DEMO on localhost
 
-**1.** Clone `react-custom-share` package.
+**1.** Clone `react-custom-share` repository.
 
 ```
 git clone https://github.com/greglobinski/react-custom-share.git
@@ -243,8 +243,9 @@ yarn develop
 
 ## Tutorials
 
-* [How to add custom social sharing buttons to a GatsbyJS blog's home page](https://dev.greglobinski.com/custom-social-share-buttons-gatsby-1/)
-* [How to add custom social sharing buttons to GatsbyJS blog's posts](https://dev.greglobinski.com/custom-social-share-buttons-gatsby-2/)
+* [Add custom social sharing buttons to a GatsbyJS blog's home page](https://dev.greglobinski.com/custom-social-share-buttons-gatsby-1/)
+* [Add custom social sharing buttons to GatsbyJS blog's posts](https://dev.greglobinski.com/custom-social-share-buttons-gatsby-2/)
+* more coming soon
 
 ## License
 
