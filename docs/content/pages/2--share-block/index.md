@@ -87,7 +87,6 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 #### Block's own props
 
-* **header** - a share block title | _string_
 * **className** - a CSS class name | _string_
 
 #### Props delegated to buttons

@@ -9391,9 +9391,9 @@ react-addons-perf@^15.4.2:
     fbjs "^0.8.4"
     object-assign "^4.1.0"
 
-react-custom-share@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/react-custom-share/-/react-custom-share-0.2.3.tgz#92180422334f12f52c78180845aba5e6ac82c9d6"
+react-custom-share@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/react-custom-share/-/react-custom-share-0.2.4.tgz#457712a14b28645c0727e0ea049602ccde699c9e"
 
 react-deep-force-update@^2.1.1:
   version "2.1.1"

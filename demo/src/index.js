@@ -65,6 +65,7 @@ const App = props => {
         <ShareBlockStandard
           {...shareBlockProps}
           button={ShareButtonRectangle}
+          header="Share it"
         />
       </div>
       <div className="box">

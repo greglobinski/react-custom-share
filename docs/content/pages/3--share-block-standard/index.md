@@ -6,7 +6,7 @@ cover: cover.png
 
 ## Demo
 
-[Live demo](../live-share-block)
+[Live demo](../live-share-block-standard)
 
 ## Description
 
@@ -24,6 +24,9 @@ Let's create a share block with three items, for Facebook, Twitter and GooglePlu
 import FaTwitter from "react-icons/lib/fa/twitter";
 import FaFacebook from "react-icons/lib/fa/facebook";
 import FaGooglePlus from "react-icons/lib/fa/google-plus";
+import FaEnvelope from "react-icons/lib/fa/envelope";
+import FaPinterest from "react-icons/lib/fa/pinterest";
+import FaLinkedin from "react-icons/lib/fa/linkedin";
 ```
 
 **Step 2.** Import the `react-custom-share`'s components: a button and a block.
@@ -40,11 +43,19 @@ const shareBlockProps = {
   buttons: [
     { network: "Twitter", icon: FaTwitter },
     { network: "Facebook", icon: FaFacebook },
-    { network: "GooglePlus", icon: FaGooglePlus }
+    { network: "GooglePlus", icon: FaGooglePlus },
+    { network: "Email", icon: FaEnvelope },
+    {
+      network: "Pinterest",
+      icon: FaPinterest,
+      media:
+        "https://raw.githubusercontent.com/greglobinski/react-custom-share/master/static/react-custom-share.gif"
+    }
   ],
   text: "Give it a try - react-custom-share component",
   longtext:
-    "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch."
+    "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch.",
+  header: "Share it"
 };
 ```
 
@@ -62,7 +73,11 @@ import ReactDOM from "react-dom";
 import FaTwitter from "react-icons/lib/fa/twitter";
 import FaFacebook from "react-icons/lib/fa/facebook";
 import FaGooglePlus from "react-icons/lib/fa/google-plus";
-import { ShareButton, ShareBlock } from "react-custom-share";
+import FaEnvelope from "react-icons/lib/fa/envelope";
+import FaPinterest from "react-icons/lib/fa/pinterest";
+import FaLinkedin from "react-icons/lib/fa/linkedin";
+
+import { ShareButton, ShareBlockStandard } from "react-custom-share";
 
 const App = props => {
   const shareBlockProps = {
@@ -70,11 +85,20 @@ const App = props => {
     buttons: [
       { network: "Twitter", icon: FaTwitter },
       { network: "Facebook", icon: FaFacebook },
-      { network: "GooglePlus", icon: FaGooglePlus }
+      { network: "GooglePlus", icon: FaGooglePlus },
+      { network: "Email", icon: FaEnvelope },
+      {
+        network: "Pinterest",
+        icon: FaPinterest,
+        media:
+          "https://raw.githubusercontent.com/greglobinski/react-custom-share/master/static/react-custom-share.gif"
+      },
+      { network: "Linkedin", icon: FaLinkedin }
     ],
     text: "Give it a try - react-custom-share component",
     longtext:
-      "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch."
+      "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch.",
+    header: "Share it"
   };
 
   return <ShareBlockStandard {...shareBlockProps} />;
@@ -85,7 +109,5 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 ## ShareBlockStandard's props
 
-#### Block's own props
-
-* **header** - a share block title | _string_
+* **header** - a share block title | _string_ | optional
 * other props the same as `ShareBlock`
