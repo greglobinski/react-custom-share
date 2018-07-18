@@ -1,16 +1,17 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import windowOpen from './utils/windowOpen';
+import React from 'react';
+
 import getNetworkLink from './utils/getNetworkLink';
+import windowOpen from './utils/windowOpen';
 
 class ShareButton extends React.PureComponent {
   onClick = e => {
     e.preventDefault();
 
-    const { url, network, text, longtext, link } = this.props;
+    const { url, network, text, longtext, link, media } = this.props;
     const networkLink = link
       ? link
-      : getNetworkLink({ network, url, text, longtext });
+      : getNetworkLink({ network, url, text, longtext, media });
 
     this.openShareWindow(networkLink);
   };
@@ -41,7 +42,6 @@ ShareButton.propTypes = {
   link: PropTypes.string,
   text: PropTypes.string,
   longtext: PropTypes.string,
-  // media prop is required when network is set to 'Pinterest'
   media: function(props, propName, componentName) {
     const key = props['network'].toLowerCase();
     if (key === 'pinterest' && props[propName] === undefined) {
@@ -56,7 +56,7 @@ ShareButton.propTypes = {
 ShareButton.defaultProps = {
   link: '',
   text: '',
-  lingtext: '',
+  longtext: '',
   className: '',
 };
 

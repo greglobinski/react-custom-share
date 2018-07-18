@@ -4,10 +4,18 @@ import React from 'react';
 import ShareBlock from '../ShareBlock';
 
 const styles = css`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  & > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  & > p {
+    font-size: 20px;
+    margin: 0 0 0.5em 0;
+    text-align: center;
+  }
 `;
 
 const ShareBlockStandard = props => {

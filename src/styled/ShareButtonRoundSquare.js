@@ -19,10 +19,10 @@ const styles = css`
 
   & > svg {
     fill: #fff;
-    height: 50%;
+    height: auto;
     transform: rotate(0) scale(1);
     transition: 0.5s;
-    width: 50%;
+    width: 18px;
   }
 
   &:hover > svg {

@@ -46,13 +46,13 @@ exports[`<ShareButtonCircle> renders correctly 1`] = `
 
 .emotion-0 > svg {
   fill: #fff;
-  height: 70%;
+  height: auto;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  width: 70%;
+  width: 22px;
   z-index: 1;
 }
 

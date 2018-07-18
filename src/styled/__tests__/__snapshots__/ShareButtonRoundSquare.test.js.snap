@@ -27,13 +27,13 @@ exports[`<ShareButtonRoundSquare> renders correctly 1`] = `
 
 .emotion-0 > svg {
   fill: #fff;
-  height: 50%;
+  height: auto;
   -webkit-transform: rotate(0) scale(1);
   -ms-transform: rotate(0) scale(1);
   transform: rotate(0) scale(1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  width: 50%;
+  width: 18px;
 }
 
 .emotion-0:hover > svg {

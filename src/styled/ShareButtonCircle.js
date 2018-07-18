@@ -35,10 +35,10 @@ let styles = css`
 
   & > svg {
     fill: #fff;
-    height: 70%;
+    height: auto;
     transform: scale(1);
     transition: 0.3s;
-    width: 70%;
+    width: 22px;
     z-index: 1;
   }
 

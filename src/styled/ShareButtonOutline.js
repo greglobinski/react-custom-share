@@ -21,9 +21,9 @@ const styles = css`
   & > svg {
     fill: white;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
-    height: 80%;
+    height: auto;
     transition: 0.3s;
-    width: 80%;
+    width: 28px;
   }
 
   @media (any-hover: none) {

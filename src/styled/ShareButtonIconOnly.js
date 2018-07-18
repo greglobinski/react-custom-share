@@ -19,9 +19,9 @@ const styles = css`
   width: 44px;
 
   & > svg {
-    height: 65%;
+    height: auto;
     transition: transform 0.3s;
-    width: 65%;
+    width: 24px;
   }
 
   &:hover > svg {

@@ -34,7 +34,7 @@ exports[`<ShareButtonRectangle> renders correctly 1`] = `
 
 .emotion-0 > svg {
   fill: #fff;
-  height: 24px;
+  height: auto;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);

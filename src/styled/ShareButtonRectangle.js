@@ -20,7 +20,7 @@ const styles = css`
 
   & > svg {
     fill: #fff;
-    height: 24px;
+    height: auto;
     transform: scale(1);
     transition: 0.3s;
     width: 24px;
