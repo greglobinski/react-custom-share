@@ -281,9 +281,11 @@ SOFTWARE.
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: http://makeapullrequest.com
 [contributors-badge]: https://img.shields.io/github/contributors/greglobinski/react-custom-share.svg
-[npm downloads]: https://img.shields.io/npm/dt/react-custom-share.svg
+[npm downloads]: https://img.shields.io/npm/dm/react-custom-share.svg
 [nd]: https://www.npmjs.com/package/react-custom-share
 [npm version]: https://badge.fury.io/js/react-custom-share.svg
 [nv]: https://badge.fury.io/js/react-custom-share
 [stars-badge]: https://img.shields.io/github/stars/greglobinski/react-custom-share.svg
 [stars]: https://github.com/greglobinski/react-custom-share/stargazers
+
+
