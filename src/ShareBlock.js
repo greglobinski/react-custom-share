@@ -8,33 +8,29 @@ const ShareBlock = props => {
     url,
     button: Button = ShareButton,
     buttons,
-    className,
+    className = '',
     buttonClassName,
-    header = '',
     ...blockRest
   } = props;
 
   return (
     <div className={`${className}`}>
-      {header && <p>{header}</p>}
-      <div className="buttons">
-        {buttons.map(button => {
-          const { network, icon: Icon, ...buttonRest } = button;
-          const rest = { ...blockRest, ...buttonRest };
+      {buttons.map(button => {
+        const { network, icon: Icon, ...buttonRest } = button;
+        const rest = { ...blockRest, ...buttonRest };
 
-          return (
-            <Button
-              key={network}
-              network={network}
-              url={url}
-              className={buttonClassName}
-              {...rest}
-            >
-              <Icon />
-            </Button>
-          );
-        })}
-      </div>
+        return (
+          <Button
+            key={network}
+            network={network}
+            url={url}
+            className={buttonClassName}
+            {...rest}
+          >
+            <Icon />
+          </Button>
+        );
+      })}
     </div>
   );
 };
@@ -46,7 +42,6 @@ ShareBlock.propTypes = {
   button: PropTypes.func.isRequired,
   buttons: PropTypes.array.isRequired,
   buttonClassName: PropTypes.string,
-  header: PropTypes.string,
   className: PropTypes.string,
 };
 

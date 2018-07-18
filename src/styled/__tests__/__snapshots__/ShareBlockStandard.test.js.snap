@@ -2,11 +2,11 @@
 
 exports[`<ShareBlockStandard> renders correctly 1`] = `
 <div
-  class="css-1j6r378"
+  class="css-9prcva"
 >
   
   <div
-    class="buttons"
+    class=""
   >
     <button
       aria-label="Share on Twitter"
