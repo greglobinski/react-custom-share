@@ -25,7 +25,7 @@
     "normalize.css": "^8.0.0",
     "prismjs": "^1.14.0",
     "react-addons-perf": "^15.4.2",
-    "react-custom-share": "^0.2.4",
+    "react-custom-share": "^0.2.6",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
     "styled-jsx": "^2.2.6",
@@ -34,9 +34,7 @@
     "tinycolor2": "^1.4.1",
     "yaml-loader": "^0.5.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -45,7 +43,7 @@
     "lint-errors": "eslint src/**/*.{js,jsx} --quiet",
     "lint": "eslint src/**/*.{js,jsx}",
     "stylelint": "stylelint src/**/*.js",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "rm -rf .cache public/ && gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
