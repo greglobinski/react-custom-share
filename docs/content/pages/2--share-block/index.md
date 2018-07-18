@@ -1,6 +1,6 @@
 ---
 title: <ShareBlock />
-description: ShareBlock is a base component on which all the styled block components are built.
+description: ShareBlock is a base component on which all block components are built.
 cover: cover.png
 ---
 

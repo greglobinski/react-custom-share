@@ -1,6 +1,6 @@
 ---
 title: <ShareBlockStandard />
-description: ShareBlockStandard is a.
+description: ShareBlockStandard is a simple 'flex' container with optional header.
 cover: cover.png
 ---
 
@@ -77,23 +77,15 @@ const App = props => {
       "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch."
   };
 
-  return <ShareBlock {...shareBlockProps} />;
+  return <ShareBlockStandard {...shareBlockProps} />;
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
-## ShareBlock's props
+## ShareBlockStandard's props
 
 #### Block's own props
 
 * **header** - a share block title | _string_
-* **className** - a CSS class name | _string_
-
-#### Props delegated to buttons
-
-* **url** - URL of the page to share | _string_ | **required**
-* **buttons** - an array of objects with props for the buttons rendered by the block component | _array_ | **required**
-* **button** - a button component, if not set `ShareButton` will be used | _React component_
-* **text** - a short text shared together with the url | _string_
-* **longtext** - an extension of the text shared together with the url | _string_
+* other props the same as `ShareBlock`

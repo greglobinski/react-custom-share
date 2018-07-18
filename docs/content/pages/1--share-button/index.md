@@ -1,6 +1,6 @@
 ---
 title: <ShareButton />
-description: ShareButton is a base component on which all the styled buttons are built.
+description: ShareButton is a base component on which all button components are bulit.
 cover: cover.png
 ---
 
