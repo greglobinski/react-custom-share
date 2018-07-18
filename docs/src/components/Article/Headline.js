@@ -11,10 +11,11 @@ const Headline = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         h1 {
-          font-size: ${theme.font.size.xxl};
+          font-size: ${theme.font.size.l};
           margin: ${theme.space.stack.l};
           animation-name: headlineEntry;
           animation-duration: ${theme.time.duration.long};
+          word-break: break-all;
 
           :global(span) {
             font-weight: ${theme.font.weight.standard};
@@ -41,13 +42,13 @@ const Headline = props => {
 
         @from-width tablet {
           h1 {
-            font-size: ${`calc(${theme.font.size.xl} * 1.2)`};
+            font-size: ${theme.font.size.xl};
           }
         }
 
         @from-width desktop {
           h1 {
-            font-size: ${`calc(${theme.font.size.xl} * 1.4)`};
+            font-size: ${theme.font.size.xxl};
           }
         }
       `}</style>

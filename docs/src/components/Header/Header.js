@@ -33,6 +33,10 @@ class Header extends React.Component {
             width: 100%;
           }
 
+          h1 {
+            font-size: 25px;
+          }
+
           p {
             padding: 1em 0 0;
             :global(a) {

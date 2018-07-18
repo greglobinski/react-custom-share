@@ -16,6 +16,7 @@ const Bodytext = props => {
           :global(h2),
           :global(h3) {
             margin: 1.5em 0 1em;
+            word-break: break-all;
           }
 
           :global(h2) {
