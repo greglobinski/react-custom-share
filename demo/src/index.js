@@ -2,10 +2,8 @@ import { css } from 'emotion';
 import { render } from 'react-dom';
 import React from 'react';
 
-// eslint-disable-next-line no-unused-vars
-import Prism from 'prismjs';
-
 import {
+  asyncShareLoading,
   ShareButton,
   ShareButtonRoundSquare,
   ShareButtonRectangle,
@@ -22,7 +20,13 @@ import FaEnvelope from 'react-icons/lib/fa/envelope';
 import FaPinterest from 'react-icons/lib/fa/pinterest';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
 
-require('prismjs/themes/prism-okaidia.css');
+const AsyncShareBlockStandard = asyncShareLoading(() =>
+  import('./components/ShareBlockToAsyncLoad-')
+    .then(module => {
+      return module;
+    })
+    .catch(error => {})
+);
 
 const App = props => {
   const shareBlockProps = {
@@ -82,6 +86,12 @@ const App = props => {
       </div>
       <div className="box">
         <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />
+      </div>
+      <div className="box">
+        <AsyncShareBlockStandard
+          {...shareBlockProps}
+          button={ShareButtonRectangle}
+        />
       </div>
     </div>
   );
