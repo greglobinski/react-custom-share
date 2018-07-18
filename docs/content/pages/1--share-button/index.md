@@ -4,6 +4,10 @@ description: ShareButton is a base component on which all the styled buttons are
 cover: cover.png
 ---
 
+## Demo
+
+[Live demo](../live-share-button)
+
 ## Description
 
 `ShareButton` is a core `react-custom-share`'s component.
@@ -81,7 +85,3 @@ ReactDOM.render(<App />, document.getElementById("root"));
 * **link** - a link to open in the 'share' pop-up window, this prop is used to set a share button for networks not suported by the built-in link builder script
 * **text** - a short text shared together with the url | _string_
 * **longtext** - an extension of the text shared together with the url | _string_
-
-## Demo
-
-[Live demo](../live-share-button)

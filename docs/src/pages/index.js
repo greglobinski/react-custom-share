@@ -19,8 +19,6 @@ class IndexPage extends React.Component {
       }
     } = this.props;
 
-    console.log(pages);
-
     return (
       <React.Fragment>
         <ThemeContext.Consumer>
@@ -58,7 +56,7 @@ export const guery = graphql`
             cover {
               children {
                 ... on ImageSharp {
-                  sizes(maxWidth: 800, maxHeight: 300) {
+                  sizes(maxWidth: 800, maxHeight: 300, quality: 95) {
                     ...GatsbyImageSharpSizes_withWebp
                   }
                 }

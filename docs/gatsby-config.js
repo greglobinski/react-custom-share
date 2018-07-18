@@ -2,6 +2,7 @@ require("dotenv").config();
 const config = require("./content/meta/config");
 
 module.exports = {
+  pathPrefix: "/react-custom-share",
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,

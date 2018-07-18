@@ -4,6 +4,10 @@ description: ShareBlock is a base component on which all the styled block compon
 cover: cover.png
 ---
 
+## Demo
+
+[Live demo](../live-share-block)
+
 ## Description
 
 `ShareBlock` is a core `react-custom-share`'s component.
@@ -93,7 +97,3 @@ ReactDOM.render(<App />, document.getElementById("root"));
 * **button** - a button component, if not set `ShareButton` will be used | _React component_
 * **text** - a short text shared together with the url | _string_
 * **longtext** - an extension of the text shared together with the url | _string_
-
-## Demo
-
-[Live demo](../live-share-block)

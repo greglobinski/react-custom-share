@@ -1,8 +1,12 @@
 ---
 title: <ShareButtonCircle />
-description: ShareButtonCircle is one of the built-in styled buttons. 
+description: ShareButtonCircle is a built-in styled button. 
 cover: cover.png
 ---
+
+## Demo
+
+[Live demo](../live-share-button-circle)
 
 ## Description
 
@@ -55,7 +59,3 @@ ReactDOM.render(<App />, document.getElementById("root"));
 ## ShareButtonRectangle's props
 
 The same as [ShareButton](../share-button)
-
-## Demo
-
-[Live demo](../live-share-button-circle)
