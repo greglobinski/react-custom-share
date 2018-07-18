@@ -1,6 +1,6 @@
 ---
 title: <ShareBlockStandard />
-description: ShareBlockStandard is a simple 'flex' container with optional header.
+description: ShareBlockStandard is a simple minimally styled container for 'share' buttons with optional header.
 cover: cover.png
 ---
 
@@ -10,9 +10,9 @@ cover: cover.png
 
 ## Description
 
-`ShareBlockStandard` is a core `react-custom-share`'s component.
+`ShareBlockStandard` is a built-in, ready-to-use 'share' block component.
 
-It renders a one or more share buttons inside a `div` container.
+It renders one or more share buttons inside a `flex` container with optional header inside `<p>` tag.
 
 ## Usage
 

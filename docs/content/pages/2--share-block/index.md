@@ -1,6 +1,6 @@
 ---
 title: <ShareBlock />
-description: ShareBlock is a base component on which all block components are built.
+description: ShareBlock is a base component of the library. All of the other block components are built on it.
 cover: cover.png
 ---
 
@@ -10,9 +10,9 @@ cover: cover.png
 
 ## Description
 
-`ShareBlock` is a core `react-custom-share`'s component.
+`ShareBlock` is a base `react-custom-share`'s component.
 
-It renders a one or more share buttons inside a `div` container.
+It renders one or more share buttons inside a `div` container.
 
 ## Usage
 

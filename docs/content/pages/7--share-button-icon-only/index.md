@@ -1,6 +1,6 @@
 ---
 title: <ShareButtonIconOnly />
-description: ShareButtonIconOnly is a built-in styled button. 
+description: ShareButtonIconOnly is a built-in, ready-to-use styled button. 
 cover: cover.png
 ---
 
@@ -10,7 +10,7 @@ cover: cover.png
 
 ## Description
 
-`ShareButtonIconOnly` is one of the built-in `react-custom-share`styled buttons.
+`ShareButtonIconOnly` is a built-in, ready-to-use styled button.
 
 It renders the base `ShareButton` component with some styling.
 

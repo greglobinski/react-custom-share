@@ -1,6 +1,6 @@
 ---
 title: <ShareButton />
-description: ShareButton is a base component on which all button components are bulit.
+description: ShareButton is a base component of the library. All of the other button components are bulit on it.
 cover: cover.png
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: <ShareButtonOutline />
-description: ShareButtonOutline is a built-in styled button. 
+description: ShareButtonOutline is a built-in, ready-to-use styled button. 
 cover: cover.png
 ---
 
@@ -10,7 +10,7 @@ cover: cover.png
 
 ## Description
 
-`ShareButtonOutline` is one of the built-in `react-custom-share`styled buttons.
+`ShareButtonOutline` is a built-in, ready-to-use styled button.
 
 It renders the base `ShareButton` component with some styling.
 

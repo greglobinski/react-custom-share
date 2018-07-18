@@ -2,11 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Footer = props => {
-  const { html, theme } = props;
+  const { theme } = props;
 
   return (
     <React.Fragment>
-      <footer className="footer" dangerouslySetInnerHTML={{ __html: html }} />
+      <footer className="footer">
+        <ul>
+          <li>
+            check <a href="https://dev.greglobinski.com">Front-end web development with Greg</a>
+          </li>
+        </ul>
+      </footer>
 
       {/* --- STYLES --- */}
       <style jsx>{`

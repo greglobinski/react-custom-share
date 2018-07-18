@@ -4,9 +4,9 @@ import FaTwitter from "react-icons/lib/fa/twitter";
 import FaFacebook from "react-icons/lib/fa/facebook";
 import FaGooglePlus from "react-icons/lib/fa/google-plus";
 
-import { ShareButton, ShareBlock } from "react-custom-share";
+import { ShareButton, ShareBlockStandard } from "react-custom-share";
 
-const LiveShareBlock = props => {
+const LiveShareBlockStandard = props => {
   const shareBlockProps = {
     url: "https://github.com/greglobinski/react-custom-share",
     button: ShareButton,
@@ -17,14 +17,15 @@ const LiveShareBlock = props => {
     ],
     text: "Give it a try - react-custom-share component",
     longtext:
-      "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch."
+      "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch.",
+    header: "Share it"
   };
 
   return (
     <React.Fragment>
       <h2>ShareBlock - live demo</h2>
       <div>
-        <ShareBlock {...shareBlockProps} />
+        <ShareBlockStandard {...shareBlockProps} />
       </div>
 
       <style jsx>{`
@@ -44,4 +45,4 @@ const LiveShareBlock = props => {
   );
 };
 
-export default LiveShareBlock;
+export default LiveShareBlockStandard;

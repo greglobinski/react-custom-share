@@ -10,7 +10,7 @@ cover: cover.png
 
 ## Description
 
-`ShareButtonRoundSquare` is one of the built-in `react-custom-share`styled buttons.
+`ShareButtonRoundSquare` is a built-in, ready-to-use styled button.
 
 It renders the base `ShareButton` component with some styling.
 
