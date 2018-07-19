@@ -21,7 +21,7 @@ import FaPinterest from 'react-icons/lib/fa/pinterest';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
 
 const AsyncShareBlockStandard = asyncShareLoading(() =>
-  import('./components/ShareBlockToAsyncLoad-')
+  import('./components/ShareBlockToAsyncLoad')
     .then(module => {
       return module;
     })
