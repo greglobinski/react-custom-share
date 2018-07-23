@@ -11,6 +11,7 @@
     "docs-deploy": "gh-pages -d docs/public",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
     "test:e2e:dev": "npm-run-all --parallel develop cy:open",
     "cy:open": "cypress open",
     "lint": "eslint src",
@@ -62,6 +63,7 @@
     "babel-plugin-transform-react-jsx": "6.24.1",
     "babel-preset-env": "1.5.1",
     "babel-preset-react": "6.24.1",
+    "codecov": "^3.0.4",
     "common-tags": "^1.8.0",
     "cross-env": "5.2.0",
     "css-loader": "0.28.11",
@@ -113,7 +115,8 @@
   },
   "dependencies": {
     "intersection-observer": "^0.5.0",
-    "lodash.debounce": "^4.0.8"
+    "lodash.debounce": "^4.0.8",
+    "react-lorem-component": "^0.13.0"
   },
   "babel": {
     "presets": "./.babelrc.js"
