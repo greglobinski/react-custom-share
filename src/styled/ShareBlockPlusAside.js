@@ -29,7 +29,7 @@ const styles = css`
     left: 0;
     position: fixed;
     top: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-101%, -50%);
     transform-origin: center;
     transition: 0.3s;
     width: 44px;
@@ -54,7 +54,7 @@ const dynamicStyles = state => css`
   & .rcs-buttons--fixed {
     transform: ${state.fixedButtonsVisible
       ? `translate(${state.fixedButtonsTranslation}px, -50%)`
-      : 'translate(-100%, -50%)'};
+      : 'translate(-101%, -50%)'};
   }
 `;
 
@@ -125,9 +125,11 @@ class ShareBlockPlusAside extends React.Component {
 
   handleIntersect = (entries, observer) => {
     entries.forEach(entry => {
-      this.setState({
-        fixedButtonsVisible: entry.intersectionRatio > 0.5 ? false : true,
-      });
+      if (this.state.fixedButtonsTranslation) {
+        this.setState({
+          fixedButtonsVisible: entry.intersectionRatio > 0.5 ? false : true,
+        });
+      }
     });
   };
 
