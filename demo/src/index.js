@@ -11,6 +11,7 @@ import {
   ShareButtonIconOnly,
   ShareButtonOutline,
   ShareBlockStandard,
+  ShareBlockPlusAside,
 } from '../../src';
 
 import FaTwitter from 'react-icons/lib/fa/twitter';
@@ -54,7 +55,6 @@ const App = props => {
       className={css`
         margin: 0 auto;
         max-width: 600px;
-
         .box {
           padding: 50px 0;
           border: 1px solid #ddd;
@@ -62,6 +62,9 @@ const App = props => {
         }
       `}
     >
+      <header className="header">
+        <h1>This is a page header</h1>
+      </header>
       <div className="box">
         <ShareBlockStandard {...shareBlockProps} />
       </div>
@@ -87,6 +90,15 @@ const App = props => {
       <div className="box">
         <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />
       </div>
+      <div className="box">
+        <ShareBlockPlusAside
+          {...shareBlockProps}
+          button={ShareButtonRectangle}
+          header="Share it"
+          pageHeaderSelector=".header"
+        />
+      </div>
+
       <div className="box">
         <AsyncShareBlockStandard
           {...shareBlockProps}

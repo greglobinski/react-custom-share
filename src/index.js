@@ -15,5 +15,6 @@ export {
   default as ShareButtonRoundSquare,
 } from './styled/ShareButtonRoundSquare';
 
-// block styles
+// block styles\
 export { default as ShareBlockStandard } from './styled/ShareBlockStandard';
+export { default as ShareBlockPlusAside } from './styled/ShareBlockPlusAside';

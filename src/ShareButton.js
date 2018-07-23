@@ -25,7 +25,7 @@ class ShareButton extends React.PureComponent {
 
     return (
       <button
-        className={`${className}`}
+        className={`${className} rcs-button`}
         aria-label={`Share on ${network}`}
         onClick={this.onClick}
       >
@@ -51,6 +51,7 @@ ShareButton.propTypes = {
     }
   },
   className: PropTypes.string,
+  htmlAttributes: PropTypes.object,
 };
 
 ShareButton.defaultProps = {

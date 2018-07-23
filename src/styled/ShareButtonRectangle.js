@@ -14,6 +14,7 @@ const styles = css`
   flex-basis: 44px;
   flex-grow: 1;
   justify-content: center;
+  margin: 0;
   min-height: 44px;
   overflow: hidden;
   transform: scale(1);

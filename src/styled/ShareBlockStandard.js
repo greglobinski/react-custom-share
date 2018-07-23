@@ -8,16 +8,16 @@ const styles = css`
   display: flex;
   flex-direction: column;
 
-  & > p {
+  & .rcs-header {
     font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
     line-height: 1;
-    margin: 0 0 0.7em 0;
+    margin: 0 0 0.5em 0;
     text-align: center;
   }
 
-  & > div {
+  & .rcs-buttons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -31,7 +31,7 @@ const ShareBlockStandard = props => {
 
   return (
     <div className={cx(styles, className)}>
-      {header && <p>{header}</p>}
+      {header && <p className="rcs-header">{header}</p>}
       <ShareBlock {...props} />
     </div>
   );
