@@ -1,9 +1,6 @@
 // utils
 export { default as objectToGetParams } from './utils/objectToGetParams';
 export { default as asyncShareLoading } from './utils/asyncShareLoading';
-export {
-  default as timeoutThrottlerHandler,
-} from './utils/timeoutThrottlerHandler';
 
 // unstyled base components./utils/AsyncComponent
 export { default as ShareButton } from './ShareButton';
