@@ -3,6 +3,7 @@
 Social media share buttons for ReactJS. Use one of the built-in button themes or create a custom one from scratch.
 
 [![npm packgage][npm version]][nv]
+[![Codecov][codecov-badge]][codecov]
 [![npm][npm downloads]][nd]
 [![GitHub stars][stars-badge]][stars]
 [![GitHub license][mit-badge]][mit]
@@ -271,21 +272,41 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+[codecov-badge]:https://img.shields.io/codecov/c/github/greglobinski/react-custom-share.svg
+
+[codecov]:https://codecov.io/gh/greglobinski/react-custom-share
+
+
 [travis-badge]: https://img.shields.io/travis/greglobinski/common-last-names.svg
+
 [mit-badge]: https://img.shields.io/github/license/greglobinski/common-last-names.svg
+
 [mit]: https://github.com/greglobinski/common-last-names/blob/master/LICENSE
+
 [twitter]: https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fgreglobinski%2Freact-custom-share
+
 [twitter-badge]: https://img.shields.io/twitter/url/https/github.com/greglobinski/react-custom-share.svg?style=social
+
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
+
 [coc]: https://github.com/greglobinski/react-custom-share/blob/master/CODE_OF_CONDUCT.md
+
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+
 [prs]: http://makeapullrequest.com
+
 [contributors-badge]: https://img.shields.io/github/contributors/greglobinski/react-custom-share.svg
+
 [npm downloads]: https://img.shields.io/npm/dm/react-custom-share.svg
+
 [nd]: https://www.npmjs.com/package/react-custom-share
+
 [npm version]: https://badge.fury.io/js/react-custom-share.svg
+
 [nv]: https://badge.fury.io/js/react-custom-share
+
 [stars-badge]: https://img.shields.io/github/stars/greglobinski/react-custom-share.svg
+
 [stars]: https://github.com/greglobinski/react-custom-share/stargazers
 
 
