@@ -11,11 +11,8 @@ expect.addSnapshotSerializer(createSerializer(emotion));
 afterEach(cleanup);
 
 describe('<ShareButtonIconOnly>', () => {
-  test(`renders correctly`, () => {
-    const props = {
-      url: 'https://website-to-share.com',
-      network: 'Twitter',
-    };
+  test(`renders unchanged`, () => {
+    const props = { url: 'https://website-to-share.com', network: 'Twitter' };
 
     const { container } = render(
       <ShareButtonIconOnly {...props}>

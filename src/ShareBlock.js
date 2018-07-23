@@ -10,11 +10,12 @@ const ShareBlock = props => {
     buttons,
     className = '',
     buttonClassName,
+    htmlAttributes,
     ...blockRest
   } = props;
 
   return (
-    <div className={`${className}`}>
+    <div className={`${className} rcs-buttons`} {...htmlAttributes}>
       {buttons.map(button => {
         const { network, icon: Icon, ...buttonRest } = button;
         const rest = { ...blockRest, ...buttonRest };
@@ -39,10 +40,11 @@ ShareBlock.propTypes = {
   url: PropTypes.string.isRequired,
   text: PropTypes.string,
   longtext: PropTypes.string,
-  button: PropTypes.func.isRequired,
+  button: PropTypes.func,
   buttons: PropTypes.array.isRequired,
   buttonClassName: PropTypes.string,
   className: PropTypes.string,
+  htmlAttributes: PropTypes.object,
 };
 
 export default ShareBlock;

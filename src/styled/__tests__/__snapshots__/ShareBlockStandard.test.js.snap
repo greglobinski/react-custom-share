@@ -1,16 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ShareBlockStandard> renders correctly 1`] = `
+exports[`<ShareBlockStandard> renders unchanged 1`] = `
 <div
-  class="css-9prcva"
+  class="css-1qq1qhc"
 >
-  
+  <p
+    class="rcs-header"
+  >
+    Share it
+  </p>
   <div
-    class=""
+    class=" rcs-buttons"
   >
     <button
       aria-label="Share on Twitter"
-      class=""
+      class=" rcs-button"
     >
       <svg
         fill="currentColor"

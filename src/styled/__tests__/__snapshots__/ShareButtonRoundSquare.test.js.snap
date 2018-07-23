@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ShareButtonRoundSquare> renders correctly 1`] = `
+exports[`<ShareButtonRoundSquare> renders unchanged 1`] = `
 .emotion-0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -74,7 +74,7 @@ exports[`<ShareButtonRoundSquare> renders correctly 1`] = `
 
 <button
   aria-label="Share on Twitter"
-  class="emotion-0"
+  class="emotion-0 rcs-button"
 >
   <svg
     fill="currentColor"

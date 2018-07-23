@@ -1,16 +1,17 @@
 module.exports = {
   setupFiles: [
+    '<rootDir>/test/mockWindowDocument.js',
     '<rootDir>/test/throwOnPropTypeError.js',
   ],
   coverageDirectory: './coverage/',
   collectCoverageFrom: ['./src/**/*.js'],
-  testRegex: '(/src/{0,1}.*/__tests__/.*)\\.jsx?$',
+  testRegex: '(/src/{0,1}.*/__tests__/.*)\\.js?$',
   coverageThreshold: {
     global: {
-      statements: 38,
-      branches: 73,
-      functions: 54,
-      lines: 37,
+      statements: 90,
+      branches: 90,
+      functions: 90,
+      lines: 95,
     },
   },
 };

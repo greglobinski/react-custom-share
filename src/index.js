@@ -1,6 +1,9 @@
 // utils
 export { default as objectToGetParams } from './utils/objectToGetParams';
 export { default as asyncShareLoading } from './utils/asyncShareLoading';
+export {
+  default as timeoutThrottlerHandler,
+} from './utils/timeoutThrottlerHandler';
 
 // unstyled base components./utils/AsyncComponent
 export { default as ShareButton } from './ShareButton';
@@ -15,5 +18,6 @@ export {
   default as ShareButtonRoundSquare,
 } from './styled/ShareButtonRoundSquare';
 
-// block styles
+// block styles\
 export { default as ShareBlockStandard } from './styled/ShareBlockStandard';
+export { default as ShareBlockPlusAside } from './styled/ShareBlockPlusAside';

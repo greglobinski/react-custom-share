@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import React from 'react';
 
 import {
-  asyncShareLoading,
+  //asyncShareLoading,
   ShareButton,
   ShareButtonRoundSquare,
   ShareButtonRectangle,
@@ -11,6 +11,7 @@ import {
   ShareButtonIconOnly,
   ShareButtonOutline,
   ShareBlockStandard,
+  ShareBlockPlusAside,
 } from '../../src';
 
 import FaTwitter from 'react-icons/lib/fa/twitter';
@@ -20,13 +21,13 @@ import FaEnvelope from 'react-icons/lib/fa/envelope';
 import FaPinterest from 'react-icons/lib/fa/pinterest';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
 
-const AsyncShareBlockStandard = asyncShareLoading(() =>
-  import('./components/ShareBlockToAsyncLoad-')
-    .then(module => {
-      return module;
-    })
-    .catch(error => {})
-);
+// const AsyncShareBlockStandard = asyncShareLoading(() =>
+//   import('./components/ShareBlockToAsyncLoad')
+//     .then(module => {
+//       return module;
+//     })
+//     .catch(error => {})
+// );
 
 const App = props => {
   const shareBlockProps = {
@@ -54,7 +55,6 @@ const App = props => {
       className={css`
         margin: 0 auto;
         max-width: 600px;
-
         .box {
           padding: 50px 0;
           border: 1px solid #ddd;
@@ -62,6 +62,9 @@ const App = props => {
         }
       `}
     >
+      <header className="header">
+        <h1>This is a page header</h1>
+      </header>
       <div className="box">
         <ShareBlockStandard {...shareBlockProps} />
       </div>
@@ -88,11 +91,17 @@ const App = props => {
         <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />
       </div>
       <div className="box">
-        <AsyncShareBlockStandard
+        <ShareBlockPlusAside
           {...shareBlockProps}
           button={ShareButtonRectangle}
+          header="Share it"
+          pageHeaderSelector=".header"
         />
       </div>
+
+      {/* <div className="box">
+        <AsyncShareBlockStandard {...shareBlockProps} button={ShareButtonRectangle} />
+      </div> */}
     </div>
   );
 };
