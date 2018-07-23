@@ -67,7 +67,7 @@ class ShareBlockPlusAside extends React.Component {
 
   state = {
     fixedButtonsVisible: false,
-    fixedButtonsTranslation: 0,
+    fixedButtonsTranslation: -101,
   };
 
   componentDidMount() {
@@ -100,7 +100,7 @@ class ShareBlockPlusAside extends React.Component {
 
     this.setState({
       fixedButtonsVisible: isFreeSpace,
-      fixedButtonsTranslation: isFreeSpace ? fixedButtonsTranslation : 0,
+      fixedButtonsTranslation: isFreeSpace ? fixedButtonsTranslation : -101,
     });
   };
 
