@@ -4,13 +4,17 @@
       "component---src-pages-live-share-button-round-square-js-0c94ab433baa985d835f.js",
       "component---src-pages-live-share-button-round-square-js-0c94ab433baa985d835f.js.map"
     ],
+    "path---live-share-block-aside": [
+      "path---live-share-block-aside-a0e39f21c11f6a62c5ab.js",
+      "path---live-share-block-aside-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-live-share-block-standard-js": [
-      "component---src-pages-live-share-block-standard-js-781051e013f7a91fa0e2.js",
-      "component---src-pages-live-share-block-standard-js-781051e013f7a91fa0e2.js.map"
+      "component---src-pages-live-share-block-standard-js-e80eb1b6ee5d3bef1761.js",
+      "component---src-pages-live-share-block-standard-js-e80eb1b6ee5d3bef1761.js.map"
     ],
     "path---share-button-rectangle": [
-      "path---share-button-rectangle-153ad315501e1c487eee.js",
-      "path---share-button-rectangle-153ad315501e1c487eee.js.map"
+      "path---share-button-rectangle-4977a0c97b1cc2604b65.js",
+      "path---share-button-rectangle-4977a0c97b1cc2604b65.js.map"
     ],
     "path---live-share-button-circle": [
       "path---live-share-button-circle-a0e39f21c11f6a62c5ab.js",
@@ -29,8 +33,8 @@
       "path---share-button-circle-8593919c786b25ef9914.js.map"
     ],
     "path---": [
-      "path----142cd161de2d39e94852.js",
-      "path----142cd161de2d39e94852.js.map"
+      "path----61dbbf946433304e7da2.js",
+      "path----61dbbf946433304e7da2.js.map"
     ],
     "path---live-share-block": [
       "path---live-share-block-a0e39f21c11f6a62c5ab.js",
@@ -45,46 +49,50 @@
       "component---src-pages-live-share-button-outline-js-1c44cb8c49cf4ae7e2c8.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-2cea8820d411072b38b2.js",
-      "component---src-layouts-index-js-2cea8820d411072b38b2.js.map"
+      "component---src-layouts-index-js-9ea8e4c92d35184af14e.js",
+      "component---src-layouts-index-js-9ea8e4c92d35184af14e.js.map"
     ],
     "path---share-button-outline": [
-      "path---share-button-outline-fd3cf4ff36e3803b3811.js",
-      "path---share-button-outline-fd3cf4ff36e3803b3811.js.map"
+      "path---share-button-outline-2a0fcb72a1635706e978.js",
+      "path---share-button-outline-2a0fcb72a1635706e978.js.map"
     ],
     "path---index": [
-      "path---index-be2cefc86414bb968a2e.js",
-      "path---index-be2cefc86414bb968a2e.js.map"
+      "path---index-93a7c4083008dd9ed34f.js",
+      "path---index-93a7c4083008dd9ed34f.js.map"
     ],
     "component---src-pages-live-share-button-circle-js": [
       "component---src-pages-live-share-button-circle-js-d29928029816c1ed8df5.js",
       "component---src-pages-live-share-button-circle-js-d29928029816c1ed8df5.js.map"
     ],
     "path---share-block-standard": [
-      "path---share-block-standard-8363d910a5b3270ea8f6.js",
-      "path---share-block-standard-8363d910a5b3270ea8f6.js.map"
+      "path---share-block-standard-c0739a9f9530c6802612.js",
+      "path---share-block-standard-c0739a9f9530c6802612.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-cf325d2e9bf981eec2f6.js",
       "component---src-pages-404-js-cf325d2e9bf981eec2f6.js.map"
     ],
     "commons": [
-      "commons-764a40dbafcb747220a5.js",
+      "commons-4fd6fe240e71c7db244d.js",
       "build-js-styles.css",
-      "commons-764a40dbafcb747220a5.js.map",
+      "commons-4fd6fe240e71c7db244d.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---share-block-aside": [
+      "path---share-block-aside-3a9f917a3b9f44cd2201.js",
+      "path---share-block-aside-3a9f917a3b9f44cd2201.js.map"
+    ],
     "path---share-button-icon-only": [
       "path---share-button-icon-only-6d206c798cc611d771a0.js",
       "path---share-button-icon-only-6d206c798cc611d771a0.js.map"
     ],
     "path---share-button-round-square": [
-      "path---share-button-round-square-9dc8361cc2d098f01c14.js",
-      "path---share-button-round-square-9dc8361cc2d098f01c14.js.map"
+      "path---share-button-round-square-0c41f7b48405c1aa6550.js",
+      "path---share-button-round-square-0c41f7b48405c1aa6550.js.map"
     ],
     "path---live-share-button-round-square": [
       "path---live-share-button-round-square-a0e39f21c11f6a62c5ab.js",
@@ -95,9 +103,9 @@
       "path---share-button-d826771d8519f452c073.js.map"
     ],
     "app": [
-      "app-7fb29082c6e262c26b1a.js",
+      "app-2299d3e1922c79b4bcd6.js",
       "build-js-styles.css",
-      "app-7fb29082c6e262c26b1a.js.map",
+      "app-2299d3e1922c79b4bcd6.js.map",
       "build-js-styles.css.map"
     ],
     "path---live-share-block-standard": [
@@ -139,6 +147,10 @@
     "path---live-share-button-icon-only": [
       "path---live-share-button-icon-only-a0e39f21c11f6a62c5ab.js",
       "path---live-share-button-icon-only-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-live-share-block-aside-js": [
+      "component---src-pages-live-share-block-aside-js-fb2a5a5f6022ed3eb11d.js",
+      "component---src-pages-live-share-block-aside-js-fb2a5a5f6022ed3eb11d.js.map"
     ]
   }
 }
