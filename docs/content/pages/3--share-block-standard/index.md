@@ -16,7 +16,7 @@ It renders one or more share buttons inside a `flex` container with optional hea
 
 ## Usage
 
-Let's create a share block with three items, for Facebook, Twitter and GooglePlus.
+Let's create a share block with five items, for Facebook, Twitter, GooglePlus, Email and Linkedin.
 
 **Step 1.** Import the icons. As usual, we are going to use icons provided by [react-icons](https://github.com/react-icons/react-icons).
 
@@ -59,7 +59,7 @@ const shareBlockProps = {
 };
 ```
 
-**Step 4.** Add `ShareBlock` to your app. Remember to pass all prepared props to the component.
+**Step 4.** Add `ShareBlockStandard` to your app. Remember to pass all prepared props to the component.
 
 ```javascript
 <ShareBlockStandard {...shareBlockProps} />
