@@ -14,12 +14,14 @@ const flushPromises = (time = 0) => {
 };
 
 describe('<ShareBlockPlusAside>', () => {
-  test('updates fixed-buttons CSS transform value after window.resize event', async () => {
+  test.skip('updates fixed-buttawait flushPromises();ons CSS transform value after window.resize event', async () => {
+    window.resizeTo(1024);
+    await flushPromises();
+
     const props = {
       url: 'https://website-to-share.com',
       button: ShareButton,
       buttons: [{ network: 'Twitter', icon: FaTwitter }],
-      pageHeaderSelector: '.header',
       debounce: 0,
     };
 

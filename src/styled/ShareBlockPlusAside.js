@@ -99,7 +99,6 @@ class ShareBlockPlusAside extends React.Component {
     const isFreeSpace = freeSpace > fixedButtonsWidth * 2;
 
     this.setState({
-      fixedButtonsVisible: isFreeSpace,
       fixedButtonsTranslation: isFreeSpace ? fixedButtonsTranslation : -101,
     });
   };
