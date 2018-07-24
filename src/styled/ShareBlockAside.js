@@ -58,7 +58,7 @@ const dynamicStyles = state => css`
   }
 `;
 
-class ShareBlockPlusAside extends React.Component {
+class ShareBlockAside extends React.Component {
   timeouts = {};
   observer;
   observerTargets = [];
@@ -164,7 +164,7 @@ class ShareBlockPlusAside extends React.Component {
   }
 }
 
-ShareBlockPlusAside.propTypes = {
+ShareBlockAside.propTypes = {
   header: PropTypes.string,
   className: PropTypes.any,
   htmlAttributes: PropTypes.object,
@@ -172,11 +172,11 @@ ShareBlockPlusAside.propTypes = {
   pageHeaderSelector: PropTypes.string,
 };
 
-ShareBlockPlusAside.defaultProps = {
+ShareBlockAside.defaultProps = {
   className: '',
   header: '',
   htmlAttributes: {},
   debounce: 250,
 };
 
-export default ShareBlockPlusAside;
+export default ShareBlockAside;

@@ -11,7 +11,7 @@ import {
   ShareButtonIconOnly,
   ShareButtonOutline,
   ShareBlockStandard,
-  ShareBlockPlusAside,
+  ShareBlockAside,
 } from '../../src';
 
 import FaTwitter from 'react-icons/lib/fa/twitter';
@@ -91,7 +91,7 @@ const App = props => {
         <ShareBlockStandard {...shareBlockProps} button={ShareButtonOutline} />
       </div>
       <div className="box">
-        <ShareBlockPlusAside
+        <ShareBlockAside
           {...shareBlockProps}
           button={ShareButtonRectangle}
           header="Share it"

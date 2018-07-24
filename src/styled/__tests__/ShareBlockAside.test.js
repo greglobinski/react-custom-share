@@ -2,7 +2,7 @@ import { render, cleanup } from 'react-testing-library';
 import FaTwitter from 'react-icons/lib/fa/twitter';
 import React from 'react';
 
-import ShareBlockPlusAside from '../ShareBlockPlusAside';
+import ShareBlockAside from '../ShareBlockAside';
 import ShareButton from '../../ShareButton';
 
 afterEach(cleanup);
@@ -28,7 +28,7 @@ describe('<ShareBlockPlusAside>', () => {
     const { getByTestId } = render(
       <div>
         <h1 className="header">Page header</h1>
-        <ShareBlockPlusAside {...props} />
+        <ShareBlockAside {...props} />
       </div>
     );
     const fixedButtons = getByTestId('rcs-fixed-buttons');
@@ -52,7 +52,7 @@ describe('<ShareBlockPlusAside>', () => {
       header: 'Share it',
     };
 
-    const { container } = render(<ShareBlockPlusAside {...props} />);
+    const { container } = render(<ShareBlockAside {...props} />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

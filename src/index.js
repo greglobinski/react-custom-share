@@ -17,4 +17,4 @@ export {
 
 // block styles\
 export { default as ShareBlockStandard } from './styled/ShareBlockStandard';
-export { default as ShareBlockPlusAside } from './styled/ShareBlockPlusAside';
+export { default as ShareBlockAside } from './styled/ShareBlockAside';
