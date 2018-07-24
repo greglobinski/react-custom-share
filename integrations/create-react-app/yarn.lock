@@ -5654,9 +5654,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-custom-share@^0.4.6:
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/react-custom-share/-/react-custom-share-0.4.6.tgz#13b17e9982bfd01dfe4c84d9bac1a8280ba1eea1"
+react-custom-share@^0.4.8:
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/react-custom-share/-/react-custom-share-0.4.8.tgz#a92e13fdc1098ece7b7ea46ee8e3b39adae2cacc"
   dependencies:
     intersection-observer "^0.5.0"
     lodash.debounce "^4.0.8"
