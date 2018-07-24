@@ -71,20 +71,24 @@ class ShareBlockAside extends React.Component {
   };
 
   componentDidMount() {
-    this.setupObserver();
-    this.setFixedButtonsTranslation();
+    if (typeof window !== `undefined`) {
+      this.setupObserver();
+      this.setFixedButtonsTranslation();
 
-    window.addEventListener(
-      'resize',
-      debounce(this.setFixedButtonsTranslation, this.props.debounce),
-      false
-    );
+      window.addEventListener(
+        'resize',
+        debounce(this.setFixedButtonsTranslation, this.props.debounce),
+        false
+      );
+    }
   }
 
   componentWillUnmount() {
     // unobserve the targets
-    for (var value of this.observerTargets) {
-      this.observer.unobserve(value);
+    if (typeof window !== `undefined`) {
+      for (var value of this.observerTargets) {
+        this.observer.unobserve(value);
+      }
     }
   }
 
