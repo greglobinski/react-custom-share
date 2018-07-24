@@ -1,10 +1,14 @@
-import 'intersection-observer';
 import { css, cx, injectGlobal } from 'emotion';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import ShareBlock from '../ShareBlock';
 import debounce from 'lodash.debounce';
+
+import ShareBlock from '../ShareBlock';
+
+if (typeof window !== 'undefined') {
+  require('intersection-observer');
+}
 
 injectGlobal`
   body {
@@ -85,10 +89,8 @@ class ShareBlockAside extends React.Component {
 
   componentWillUnmount() {
     // unobserve the targets
-    if (typeof window !== `undefined`) {
-      for (var value of this.observerTargets) {
-        this.observer.unobserve(value);
-      }
+    for (var value of this.observerTargets) {
+      this.observer.unobserve(value);
     }
   }
 
@@ -108,36 +110,32 @@ class ShareBlockAside extends React.Component {
   };
 
   setupObserver = () => {
-    if (typeof window !== `undefined`) {
-      const options = { rootMargin: '0px', threshold: [0.5] };
-      this.observer = new IntersectionObserver(this.handleIntersect, options);
+    const options = { rootMargin: '0px', threshold: [0.5] };
+    this.observer = new IntersectionObserver(this.handleIntersect, options);
 
-      // add inline buttons to targets
-      this.observerTargets.push(document.querySelector('.rcs-buttons--inline'));
+    // add inline buttons to targets
+    this.observerTargets.push(document.querySelector('.rcs-buttons--inline'));
 
-      // add page header to targets, if selector is provided
-      const { pageHeaderSelector } = this.props;
-      if (this.props.pageHeaderSelector) {
-        this.observerTargets.push(document.querySelector(pageHeaderSelector));
-      }
+    // add page header to targets, if selector is provided
+    const { pageHeaderSelector } = this.props;
+    if (this.props.pageHeaderSelector) {
+      this.observerTargets.push(document.querySelector(pageHeaderSelector));
+    }
 
-      // observe the targets
-      for (var value of this.observerTargets) {
-        this.observer.observe(value);
-      }
+    // observe the targets
+    for (var value of this.observerTargets) {
+      this.observer.observe(value);
     }
   };
 
   handleIntersect = (entries, observer) => {
-    if (typeof window !== `undefined`) {
-      entries.forEach(entry => {
-        if (this.state.fixedButtonsTranslation) {
-          this.setState({
-            fixedButtonsVisible: entry.intersectionRatio > 0.5 ? false : true,
-          });
-        }
-      });
-    }
+    entries.forEach(entry => {
+      if (this.state.fixedButtonsTranslation) {
+        this.setState({
+          fixedButtonsVisible: entry.intersectionRatio > 0.5 ? false : true,
+        });
+      }
+    });
   };
 
   render() {
