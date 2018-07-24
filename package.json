@@ -115,8 +115,7 @@
   },
   "dependencies": {
     "intersection-observer": "^0.5.0",
-    "lodash.debounce": "^4.0.8",
-    "react-lorem-component": "^0.13.0"
+    "lodash.debounce": "^4.0.8"
   },
   "babel": {
     "presets": "./.babelrc.js"
