@@ -8,6 +8,7 @@ import FaGooglePlus from 'react-icons/lib/fa/google-plus';
 import FaEnvelope from 'react-icons/lib/fa/envelope';
 import FaPinterest from 'react-icons/lib/fa/pinterest';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
+import FaWhatsapp from 'react-icons/lib/fa/whatsapp';
 
 const ShareBlockToAsyncLoad = props => {
   const shareBlockProps = {
@@ -25,6 +26,7 @@ const ShareBlockToAsyncLoad = props => {
           'https://raw.githubusercontent.com/greglobinski/react-custom-share/master/static/react-custom-share.gif',
       },
       { network: 'Linkedin', icon: FaLinkedin },
+      { network: 'Whatsapp', icon: FaWhatsapp },
     ],
     text: `Give it a try - react-custom-share component`,
     longtext: `Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch.`,

@@ -5,4 +5,5 @@ module.exports = {
   Email: 'rgba(252, 201, 93, 1)',
   Pinterest: 'rgba(241, 98, 97, 1)',
   Linkedin: 'rgba(144, 202, 221, 1)',
+  Whatsapp: 'rgba(37, 211, 102, 1)',
 };

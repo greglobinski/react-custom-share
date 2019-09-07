@@ -42,8 +42,8 @@ const CustomLinkButtonExample = props => {
       <p>
         At this stage{' '}
         <code className="language-javascript">react-custom-share</code> has
-        built-in 'share-link' build scripts for six networks: Facebook, Twitter,
-        Google+, Linkedin, Pinterest and Email.
+        built-in 'share-link' build scripts for seven networks: Facebook,
+        Twitter, Google+, Linkedin, Pinterest, Whatsapp and Email.
       </p>
       <p>
         But you can easily add share button for <b>any social network</b>, as

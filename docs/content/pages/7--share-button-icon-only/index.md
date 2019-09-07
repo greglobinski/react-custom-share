@@ -25,6 +25,7 @@ import FaGooglePlus from "react-icons/lib/fa/google-plus";
 import FaEnvelope from "react-icons/lib/fa/envelope";
 import FaPinterest from "react-icons/lib/fa/pinterest";
 import FaLinkedin from "react-icons/lib/fa/linkedin";
+import FaWhatsapp from "react-icons/lib/fa/whatsapp";
 
 import { ShareButtonIconOnly, ShareBlockStandard } from "react-custom-share";
 
@@ -37,6 +38,7 @@ const App = props => {
       { network: "Facebook", icon: FaFacebook },
       { network: "GooglePlus", icon: FaGooglePlus },
       { network: "Email", icon: FaEnvelope },
+      { network: "Whatsapp", icon: FaWhatsapp },
       {
         network: "Pinterest",
         icon: FaPinterest,

@@ -27,6 +27,7 @@ import FaGooglePlus from "react-icons/lib/fa/google-plus";
 import FaEnvelope from "react-icons/lib/fa/envelope";
 import FaPinterest from "react-icons/lib/fa/pinterest";
 import FaLinkedin from "react-icons/lib/fa/linkedin";
+import FaWhatsapp from "react-icons/lib/fa/whatsapp";
 ```
 
 **Step 2.** Import the `react-custom-share`'s components: a button and a block.
@@ -45,6 +46,7 @@ const shareBlockProps = {
     { network: "Facebook", icon: FaFacebook },
     { network: "GooglePlus", icon: FaGooglePlus },
     { network: "Email", icon: FaEnvelope },
+    { network: "Whatsapp", icon: FaWhatsapp },
     {
       network: "Pinterest",
       icon: FaPinterest,
@@ -76,6 +78,7 @@ import FaGooglePlus from "react-icons/lib/fa/google-plus";
 import FaEnvelope from "react-icons/lib/fa/envelope";
 import FaPinterest from "react-icons/lib/fa/pinterest";
 import FaLinkedin from "react-icons/lib/fa/linkedin";
+import FaWhatsapp from "react-icons/lib/fa/whatsapp";
 
 import { ShareButton, ShareBlockStandard } from "react-custom-share";
 
@@ -94,6 +97,7 @@ const App = props => {
           "https://raw.githubusercontent.com/greglobinski/react-custom-share/master/static/react-custom-share.gif"
       },
       { network: "Linkedin", icon: FaLinkedin }
+      { network: "Whatsapp", icon: Fawhatsapp }
     ],
     text: "Give it a try - react-custom-share component",
     longtext:
@@ -109,5 +113,5 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 ## ShareBlockStandard's props
 
-* **header** - a share block title | _string_ | optional
-* other props the same as `ShareBlock`
+- **header** - a share block title | _string_ | optional
+- other props the same as `ShareBlock`

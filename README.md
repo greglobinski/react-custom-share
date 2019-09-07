@@ -38,6 +38,7 @@ Social media share buttons for ReactJS. Use one of the built-in button themes or
   - Twitter
   - Google+
   - Linkedin
+  - Whatsapp
   - Pinterest
   - email
 - flexibility to add share buttons for unsupported networks
@@ -89,6 +90,7 @@ import FaGooglePlus from 'react-icons/lib/fa/google-plus';
 import FaEnvelope from 'react-icons/lib/fa/envelope';
 import FaPinterest from 'react-icons/lib/fa/pinterest';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
+import FaWhatsapp from 'react-icons/lib/fa/whatsapp';
 
 // import react-custom-share components
 import { ShareButtonRectangle, ShareBlockStandard } from 'react-custom-share';
@@ -103,6 +105,7 @@ const ShareComponent = props => {
       { network: 'Facebook', icon: FaFacebook },
       { network: 'GooglePlus', icon: FaGooglePlus },
       { network: 'Email', icon: FaEnvelope },
+      { network: 'Whatsapp', icon: FaWhatsapp },
       { network: 'Pinterest', icon: FaPinterest, media: 'https://mywebsite.com/image-to-share.jpg' },
       { network: 'Linkedin', icon: FaLinkedin },
     ],
@@ -140,7 +143,7 @@ import {
 ShareButton.propTypes = {
   /* REQUIRED props */
 
-  // network: social network name, one of the list: Twitter, Facebook, GooglePlus, Pinterest, Linkedin or Email
+  // network: social network name, one of the list: Twitter, Facebook, GooglePlus, Pinterest, Whatsapp, Linkedin or Email
   network: PropTypes.string.isRequired,
   // url: the address of the page you want to share, 'https://mywebpage.com/'
   url: PropTypes.string.isRequired,

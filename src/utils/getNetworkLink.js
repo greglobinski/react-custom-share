@@ -46,6 +46,12 @@ const generators = {
       description: text,
     })}`;
   },
+  whatsapp: params => {
+    const { url, text = '' } = params;
+    return `https://api.whatsapp.com/send${objectToGetParams({
+      text: `${text ? text + ' | ' : ''}${url}`,
+    })}`;
+  },
 };
 
 function getNetworkLink(params) {

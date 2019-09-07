@@ -78,10 +78,10 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 ## ShareButton's props
 
-* **network** - a network's name | possible values: ['Facebook', 'GooglePlus', 'Twitter', 'Linkedin', 'Pinterest', 'Email'] | _string_ | **required**
-* **url** - URL of the page to share | _string_ | **required**
-* **children** - an inner element of the button | _string_, _html tag_ or _React component_ | **required**
-* **media** - URL of an image | **required** if network's value is 'Pinterest'
-* **link** - a link to open in the 'share' pop-up window, this prop is used to set a share button for networks not suported by the built-in link builder script
-* **text** - a short text shared together with the url | _string_
-* **longtext** - an extension of the text shared together with the url | _string_
+- **network** - a network's name | possible values: ['Facebook', 'GooglePlus', 'Twitter', 'Linkedin', 'Whatsapp', 'Pinterest', 'Email'] | _string_ | **required**
+- **url** - URL of the page to share | _string_ | **required**
+- **children** - an inner element of the button | _string_, _html tag_ or _React component_ | **required**
+- **media** - URL of an image | **required** if network's value is 'Pinterest'
+- **link** - a link to open in the 'share' pop-up window, this prop is used to set a share button for networks not suported by the built-in link builder script
+- **text** - a short text shared together with the url | _string_
+- **longtext** - an extension of the text shared together with the url | _string_

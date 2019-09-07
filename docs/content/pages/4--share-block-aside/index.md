@@ -31,6 +31,7 @@ import FaGooglePlus from "react-icons/lib/fa/google-plus";
 import FaEnvelope from "react-icons/lib/fa/envelope";
 import FaPinterest from "react-icons/lib/fa/pinterest";
 import FaLinkedin from "react-icons/lib/fa/linkedin";
+import FaWhatsapp from "react-icons/lib/fa/whatsapp";
 ```
 
 **Step 2.** Import the `react-custom-share` components: a button and a block. Notice that we will use `ShareButtonRectangle` as a button component to render the items of the block.
@@ -84,6 +85,7 @@ import FaGooglePlus from "react-icons/lib/fa/google-plus";
 import FaEnvelope from "react-icons/lib/fa/envelope";
 import FaPinterest from "react-icons/lib/fa/pinterest";
 import FaLinkedin from "react-icons/lib/fa/linkedin";
+import FaWhatsapp from "react-icons/lib/fa/whatsapp";
 
 import { ShareButton, ShareBlockAside } from "react-custom-share";
 
@@ -103,6 +105,7 @@ const App = props => {
           "https://raw.githubusercontent.com/greglobinski/react-custom-share/master/static/react-custom-share.gif"
       },
       { network: "Linkedin", icon: FaLinkedin }
+      { network: "Whatsapp", icon: FaWhatsapp }
     ],
     text: "Give it a try - react-custom-share component",
     longtext:
@@ -119,7 +122,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 ## ShareBlockStandard's props
 
-* **header** - the inline share block's title | _string_ | optional
-* **debounce**: wait option for the `debounce` method applied to `window.resize` event | number _(milliseconds)_ | optional | default: 250
-* **pageHeaderSelector**: selector for `document.querySelector()` pointing the header of the web page | _string_ | optional
-* other props the same as `ShareBlock`
+- **header** - the inline share block's title | _string_ | optional
+- **debounce**: wait option for the `debounce` method applied to `window.resize` event | number _(milliseconds)_ | optional | default: 250
+- **pageHeaderSelector**: selector for `document.querySelector()` pointing the header of the web page | _string_ | optional
+- other props the same as `ShareBlock`

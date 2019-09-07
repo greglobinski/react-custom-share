@@ -58,6 +58,17 @@ describe('function getNetworkLink()', () => {
     );
   });
 
+  test('returns a proper link for Whatsapp', () => {
+    expect(
+      getNetworkLink({
+        network: 'Whatsapp',
+        url: urlToShare,
+      })
+    ).toMatch(
+      /^https:\/\/api.whatsapp.com\/send\?text=https%3A%2F%2Fwebsite-to-share.com/
+    );
+  });
+
   test('returns a proper link for GooglePlus', () => {
     expect(
       getNetworkLink({
