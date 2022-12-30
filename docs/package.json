@@ -4,7 +4,7 @@
   "author": "Greg Lobinski <greglobinski@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "gatsby": "^1.9.261",
+    "gatsby": "^5.3.3",
     "gatsby-image": "^1.0.51",
     "gatsby-link": "^1.6.44",
     "gatsby-plugin-catch-links": "^1.0.22",
